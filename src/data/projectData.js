@@ -26,7 +26,7 @@ const projectData = [
     pr_image: port_profile,
     pr_title: "포트폴리오",
     pr_detail: "제 소개를 위해 만든 포트폴리오 사이트 입니다.",
-    pr_sitelink: "https://jaesang98.github.io/portfolio/",
+    pr_sitelink: "https://jsnam-portfolio.vercel.app/",
     pr_date: "2024.10 ~ 2024.11",
   },
 ];
