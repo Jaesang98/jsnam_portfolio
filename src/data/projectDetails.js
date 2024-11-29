@@ -16,6 +16,14 @@ import port_aboutme from '../assets/img/port_aboutme.png'
 import port_career from '../assets/img/port_career.png'
 import port_project from '../assets/img/port_project.png'
 
+//hjChatBot
+import chat_main from '../assets/img/chat_main.png'
+import chat from '../assets/img/chat.png'
+import chat2 from '../assets/img/chat2.png'
+import chat3 from '../assets/img/chat3.png'
+import chat4 from '../assets/img/chat4.png'
+
+
 const projectDetails = [{
   prDetail_id: "1",
   prDetail_team: "T",
@@ -95,6 +103,33 @@ const projectDetails = [{
         projectLink: "https://jsnam-portfolio.vercel.app/",
         githubLink: "https://github.com/Jaesang98/jsnam_portfolio",
       }},
+
+      {
+        prDetail_id: "4",
+        prDetail_team: "T",
+        prDetail_title: "HJ-chatBot",
+        prDetail_date: "2024.11 ~ 2024.11",
+        prDetail_description: "회사 사내에서 서버 팀원과 협력하여 간단한 Chat AI를 구현해보는 것을 목표로 한 학습 프로젝트입니다.",
+        prDetail_techStack: "Vue, JavaScript, SCSS",
+        prDetail_features: [
+          "데스크톱, 모바일, 태블릿에서 반응형으로 동작",
+          "메시지 전송 및 간단한 대화 기능 구현",
+          "사내 내부망에서만 사용 가능"
+        ],
+        prDetail_role: "기획 및 디자인, 화면 퍼블리싱, 프론트엔드 전체 개발 및 공통 기능 구현",
+        prDetail_reflections: "서버 팀원과 협업하며 Chat AI의 구조를 이해하게 되었고, 프론트엔드에서 서버 통신 및 데이터 처리 경험을 쌓았습니다. 간단한 기능이었지만, 프로젝트를 통해 Vue의 활용 능력이 한층 향상되었습니다.",
+        prDetail_images: [
+          chat_main, chat, chat2, chat3, chat4
+        ],
+        prDetail_challenges: {
+          problem: "서버와의 통신 구조와 간단한 AI 응답 생성 로직 설계에서 어려움을 겪었습니다. 또한, 프론트엔드 배포를 Vercel을 사용했는데, 기본적으로 로컬 환경에서는 정상 작동했으나 Vercel 환경에서 배포 후 내부망을 사용하더라도 일부 기능이 제대로 동작하지 않는 문제가 있었습니다.",
+          solution: "서버 팀원의 도움으로 통신 구조를 설계하고 문제를 점검했으며, Vercel 배포 환경에서 발생하는 네트워크 문제를 디버깅하여 설정을 조정하려고 노력했습니다. 이후 일부 기능은 로컬 환경에서만 안정적으로 동작하도록 설정했습니다."
+        },
+        prDetail_outcomes: "사내 환경에서 사용할 수 있는 간단한 Chat AI를 구현하며, 프론트엔드와 백엔드 간 협업의 중요성을 느꼈습니다. 또한, Vue와 SCSS를 활용해 반응형 UI를 효율적으로 구성하는 능력을 향상시켰습니다. Vercel 배포 경험을 통해 클라우드 배포의 특징과 내부망에서의 제약 사항을 이해할 수 있었습니다.",
+        prDetail_links: {
+          projectLink: "https://hj-chatbot.vercel.app/hjBot/",
+          githubLink: "https://github.com/Jaesang98/HJ-Chatbot"
+        }},         
 ];
 
 export default projectDetails;

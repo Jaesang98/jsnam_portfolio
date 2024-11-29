@@ -1,6 +1,8 @@
 import clim_main from '../assets/img/clim_main.png'
 import port_profile from '../assets/img/port_profile.png'
 import dev_code from '../assets/img/dev_code.png'
+import chat from '../assets/img/chat_main.png'
+
 const projectData = [
   {
     pr_id: "1",
@@ -28,6 +30,15 @@ const projectData = [
     pr_detail: "제 소개를 위해 만든 포트폴리오 사이트 입니다.",
     pr_sitelink: "https://jsnam-portfolio.vercel.app/",
     pr_date: "2024.10 ~ 2024.11",
+  },
+  {
+    pr_id: "4",
+    pr_team: "T",
+    pr_image: chat,
+    pr_title: "HJ-chatBot",
+    pr_detail: "회사사내에서 사용하기 위해 만든 chat AI입니다.",
+    pr_sitelink: "https://hj-chatbot.vercel.app/hjBot/",
+    pr_date: "2024.11 ~ 2024.11",
   },
 ];
 
