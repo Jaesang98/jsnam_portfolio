@@ -5,93 +5,245 @@
 //     src: url("/public/fonts/SDGothicNeoRound-gBd.otf") format("opentype");
 //   }
 
-    /* Archivo */
-    @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+/* Archivo */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
 
-  
-  /********** Common **********/
-  
-  /** Root Setting **/
-  :root {
-      --font: "Archivo";
-    //   --font-pre: "Pretendard", sans-serif;
-    //   --font-flame: "Flame", "Sandoll GothicNeoRound", sans-serif;
-    //   --font-BKR: "BKR", "Sandoll GothicNeoRound", "Pretendard", sans-serif;
-      --bg-base: #212121;
-    //   --bg-light: #FFFCF8;
-    //   --normal: #502314;
-    //   --normal-rgb: 80, 35, 20;
-    //   --primary: #D62300;
-    //   --sub: #6F6F6F;
-    //   --light: #89665B;
-    //   --border: rgba(80, 35, 20, 0.1);
-    //   --form-border: #D4C3B4;
-    //   --disabled: #FFFCF8;
-    //   --disabled-bg: rgba(80, 35, 20, 0.15);
-    //   --placeholder: rgba(80, 35, 20, 0.3);
-  
-    //   --red: #D62300;
-    //   --orange: #FF8732;
-    //   --yellow: #FFAA00;
-    //   --green: #198737;
-    //   --king: #C9281D;
-  
-    //   --member-welcome: #5C1903;
-    //   --member-junior: #198737;
-    //   --member-whopper: #FF8732;
-    //   --member-king: #D72300;
-    //   --member-crown: #502314;
+/********** Common **********/
+
+/** Root Setting **/
+:root {
+  --font: "Archivo";
+  //   --font-pre: "Pretendard", sans-serif;
+  //   --font-flame: "Flame", "Sandoll GothicNeoRound", sans-serif;
+  //   --font-BKR: "BKR", "Sandoll GothicNeoRound", "Pretendard", sans-serif;
+  --bg-base: #212121;
+  //   --bg-light: #FFFCF8;
+  //   --normal: #502314;
+  //   --normal-rgb: 80, 35, 20;
+  //   --primary: #D62300;
+  //   --sub: #6F6F6F;
+  //   --light: #89665B;
+  //   --border: rgba(80, 35, 20, 0.1);
+  //   --form-border: #D4C3B4;
+  //   --disabled: #FFFCF8;
+  //   --disabled-bg: rgba(80, 35, 20, 0.15);
+  //   --placeholder: rgba(80, 35, 20, 0.3);
+
+  //   --red: #D62300;
+  //   --orange: #FF8732;
+  //   --yellow: #FFAA00;
+  //   --green: #198737;
+  //   --king: #C9281D;
+
+  //   --member-welcome: #5C1903;
+  //   --member-junior: #198737;
+  //   --member-whopper: #FF8732;
+  //   --member-king: #D72300;
+  //   --member-crown: #502314;
+}
+
+/** Body Default */
+body {
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -khtml-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+/** Ionic & Vue Default Tag Reset */
+#root {
+  position: relative;
+  height: 100%;
+  background-color: var(--bg-base);
+  overflow: auto;
+}
+ion-page,
+.ion-page {
+  --background: #f5ebdc;
+}
+.header-md::after,
+.footer-md::before {
+  display: none;
+}
+html.md {
+  --ion-default-font: var(--font);
+}
+
+/** Tag Default */
+* {
+  box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+}
+html {
+  font-family: var(--font);
+  color: var(--normal);
+}
+body {
+  color: var(--normal);
+  word-break: break-all;
+}
+em {
+  font-style: normal;
+  color: var(--primary);
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+  border: none;
+}
+p,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+em,
+figure {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-size: 1em;
+}
+li {
+  list-style: none;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+legend {
+  position: absolute;
+  left: -1000px;
+  top: -1000px;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: var(--normal);
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1em;
+}
+table caption {
+  position: absolute;
+  left: -999px;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+table td,
+table th {
+  padding: 0;
+}
+button {
+  margin: 0;
+  padding: 0;
+  font: normal 1em var(--font);
+  color: var(--normal);
+  vertical-align: middle;
+  background: 0;
+  border: none;
+  overflow: visible;
+  cursor: pointer;
+  &:disabled {
+    color: var(--disabled);
+    background-color: rgba($color: var(--normal-rgb), $alpha: 0.15);
+    border: none;
+    opacity: 1;
   }
-  
-  /** Body Default */
-  body {
-    -webkit-touch-callout: none !important;
-    -webkit-user-select: none !important;
-    -khtml-user-select: none !important;
-    -moz-user-select: none !important;
-    -ms-user-select: none !important;
-    user-select: none !important;
+}
+button:active {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+button.disabled {
+  color: var(--disabled);
+  background-color: rgba($color: var(--normal-rgb), $alpha: 0.15);
+  border: none;
+  opacity: 1;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="rang"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="datetime"],
+input[type="month"],
+input[type="tel"],
+input[type="search"],
+input[type="color"],
+input[type="file"],
+ion-input {
+  display: inline-block;
+  max-width: 100%;
+  height: 46px;
+  margin: 0;
+  padding: 5px 15px 3px;
+  font: normal 0.9375rem var(--font), sans-serif;
+  color: var(--normal);
+  vertical-align: middle;
+  background: var(--bg-light);
+  border: 1px solid var(--form-border);
+  border-radius: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+
+  &[readonly] {
+    color: rgba($color: var(--normal-rgb), $alpha: 0.7);
+    background-color: #f9f1e5;
   }
-  
-  /** Ionic & Vue Default Tag Reset */
-  #root {position: relative; height: 100%; background-color: var(--bg-base); overflow: auto;}
-  ion-page, .ion-page {--background: #F5EBDC;}
-  .header-md::after, .footer-md::before {display: none;}
-  html.md {--ion-default-font: var(--font);}
-  
-  /** Tag Default */
-  * {box-sizing: border-box;}
-  *::-webkit-scrollbar {display: none;}
-  html, body {width: 100%; height: 100%; margin: 0; padding: 0; -webkit-text-size-adjust: none;}
-  html {font-family: var(--font); color: var(--normal);}
-  body {color: var(--normal); word-break: break-all;}
-  em {font-style: normal; color:var(--primary);}
-  img {max-width: 100%; vertical-align: top; border: none;}
-  p, ul, li, ol, h1, h2, h3, h4, h5, h6, dl, dt, dd, em, figure {margin: 0; padding: 0;}
-  p {margin: 0;}
-  h1, h2, h3, h4, h5, h6 {font-weight: bold; font-size: 1em;}
-  li {list-style: none;}
-  fieldset {margin: 0; padding: 0; border: none;}
-  legend {position: absolute; left: -1000px; top: -1000px; height: 0; font-size: 0; line-height: 0; visibility: hidden;}
-  a {display: inline-flex; align-items: center; justify-content: center; margin: 0; color: var(--normal); text-decoration: none; outline: none; cursor: pointer;}
-  table {width: 100%; border-collapse: collapse; font-size: 1em;}
-  table caption {position: absolute; left: -999px; height: 0; font-size: 0; line-height: 0; visibility: hidden; overflow: hidden;}
-  table td, table th {padding:0;}
-  button {margin: 0; padding: 0; font: normal 1em var(--font); color: var(--normal); vertical-align: middle; background: 0; border: none; overflow: visible; cursor: pointer;
-      &:disabled {color: var(--disabled); background-color: rgba($color: var(--normal-rgb), $alpha: 0.15); border: none; opacity: 1;}
-  }
-  button:active {outline: none; -webkit-tap-highlight-color: rgba(0,0,0,0);}
-  button.disabled {color: var(--disabled); background-color: rgba($color: var(--normal-rgb), $alpha: 0.15); border: none; opacity: 1;}
-  
-  input[type=text], input[type=password], input[type=number], input[type=tel], input[type=rang], input[type=email], input[type=url], input[type=date], input[type=datetime], input[type=month], input[type=tel], input[type=search], input[type=color], input[type=file]
-  , ion-input {
-      display: inline-block; max-width: 100%; height: 46px; margin: 0; padding: 5px 15px 3px; font: normal .9375rem var(--font), sans-serif; color: var(--normal); vertical-align: middle;
-      background: var(--bg-light); border: 1px solid var(--form-border); border-radius: 10px; -webkit-appearance: none; appearance: none;
-  
-      &[readonly] {color: rgba($color: var(--normal-rgb), $alpha: 0.7); background-color: #F9F1E5;}
-  }
-  input.input_sm {height: 40px;}
-  
+}
+input.input_sm {
+  height: 40px;
+}
+
 //   input[type=checkbox] {appearance: none; min-width: 24px; width: 24px; height: 24px; margin: 0; vertical-align: middle; background: url("../images/checkbox_off.svg") no-repeat left center;}
 //   input[type=checkbox]:checked {background-image: url("../images/checkbox_on.svg");}
 //   input[type=checkbox]:disabled {background-image: url("../images/checkbox_off_disabled.svg");}
@@ -103,7 +255,7 @@
 //   input.checkbox03:checked {background-image: url("../images/checkbox03_on.svg");}
 //   input.checkbox04 {background-image: url("../images/checkbox04_off.svg");}
 //   input.checkbox04:checked {background-image: url("../images/checkbox03_on.svg"); background-size: 20px 20px;}
-  
+
 //   input[type=radio] {appearance: none; width: 24px; height: 24px; margin: 0; vertical-align: middle; background: url("../images/radio_off.svg") no-repeat left center;}
 //   input[type=radio]:checked {background-image: url("../images/radio_on.svg");}
 //   input[type=radio]:disabled {background-image: url("../images/radio_off_disabled.svg");}
@@ -111,105 +263,309 @@
 //   input.radio02 {background-image: url("../images/radio02_off.svg");}
 //   input.radio02:checked {background-image: url("../images/radio02_on.svg");}
 //   input.radio02:checked:disabled {background-image: url("../images/radio02_off.svg"); opacity: 0.5;}
-  
-  input[type=radio] + *, input[type=checkbox] + * {margin-left: 5px; vertical-align:middle;}
-  
+
+input[type="radio"] + *,
+input[type="checkbox"] + * {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
 //   select {height: 46px; padding: 7px 40px 5px 10px; font: normal 0.9375rem var(--font); color: var(--normal); text-overflow: ellipsis; background: url("../images/select_arrow.svg") no-repeat right 14px center; background-color: var(--bg-light); border: 1px solid var(--form-border); border-radius: 10px; white-space: nowrap; overflow: hidden; appearance: none;
 //       &.sm {height: 36px;}
 //   }
-  
-  input:focus, textarea:focus, select:focus, button:focus, a:active {outline: none; -webkit-tap-highlight-color:rgba(0,0,0,0.0);}
-  input:focus:not([type=checkbox]):not([type=radio]), select:focus, textarea:focus {border-color: var(--normal);}
-  input::placeholder {color: var(--placeholder);}
-  input.text_right::-webkit-input-placeholder, input.text_right::placeholder {text-align: left;}
-  
-  textarea {max-width: 100%; margin: 0; padding: 14px 15px; font: normal .9375rem var(--font), sans-serif; color: var(--normal); vertical-align: middle; line-height: 1.47;
-      background: var(--bg-light); border: 1px solid var(--form-border); border-radius: 10px; -webkit-appearance: none; appearance: none;
-  }
-  textarea::placeholder {color: var(--placeholder);}
-  textarea:only-child {width: 100%;}
-  
-  
-  hr {height: 0; margin: 15px -20px; border: none; border-top: 5px solid rgba($color: var(--normal-rgb), $alpha: 0.1);}
-  article, aside, footer, header, hgroup, nav, section, figure {display: block; padding: 0; margin: 0;}
-  a[href^=tel] {text-decoration: underline;}
-  sub {font-family: var(--font-pre); font-size: 0.75rem; color: var(--light);}
-  label sub {margin-left: 5px;}
-  del {font-size: 0.625rem; color: var(--normal); opacity: 0.4;}
-  
-  iframe {display: block; width: 100vw; height: 100%; background-color: transparent; border: none;}
-  
-  @media screen and (max-width: 320px) {
-      html {zoom: 0.8;}
-  }
-  
-  /******** common class ********/
-  .hide { position: absolute !important; left: -999em; top: -999em; visibility: hidden;}
-  .none {display: none !important;}
-  .bg_w {background-color: #fff !important;}
-  .bg_base {background-color: var(--bg-base) !important;}
-  .bg_beige {background-color: #f9f4e5 !important;}
-  .bg_red {background: rgba($color: #d62300, $alpha: 0.05) !important; color: var(--red);}
-  .bg_green {background: rgba($color: #198737, $alpha: 0.05) !important; color: var(--green);}
-  .bg_normal_w {background: rgba($color: #502314, $alpha: 0.05) !important;}
-//   .bg_underdot {background: url("../images/bg_underdot.svg") repeat 0 0;}
-  .bg_background_w {background: rgba($color: #f5ebdc, $alpha: 0.3) !important;
-      &.alpha02 {background: rgba($color: #f5ebdc, $alpha: 0.5) !important;}
-  }
-  .pd0 {padding: 0 !important;}
-  .mg0 {margin: 0 !important;}
-  .block {display: block !important;}
-  .dflex {display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex;
-      &.column {flex-direction: column;}
-  }
-  .flex_none {flex: none !important;}
-  .flex_1 {flex: 1;}
-  .iblock {display: inline-block !important;}
-  .align_center {display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; align-items: center;
-      > input {margin-bottom: auto;
-          + * {flex: 1;}
-          + .txt {flex: none;}
-      }
-  }
-  .underline {text-decoration: underline;}
-  .cen {text-align: center !important;}
-  .text_left {text-align: left !important;}
-  .text_right {text-align: right !important;}
-  .vtop {margin-bottom: auto; vertical-align: top;}
-  .mid {text-align: middle;}
-  .right {margin-left: auto;}
-  .ellipsis {text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
-  .nowrap {white-space: nowrap !important;}
-  .read-only {pointer-events: none; touch-action: none; user-select: none;}
-  .justiy_left {justify-content: left !important;}
-  .justiy_cen {justify-content: center !important;}
-  .vertical_mid {vertical-align: middle !important;}
-  .border_trans {border-color: transparent !important;}
-  
-  .mg_minus20 {margin: -20px !important;}
-  .mt_minus5 {margin-top: -5px !important;}
-  .mt0 {margin-top: 0 !important;}
-  .mt5 {margin-top: 5px !important;}
-  .mt10 {margin-top: 10px !important;}
-  .mt15 {margin-top: 15px !important;}
-  .mt20 {margin-top: 20px !important;}
-  .mt30 {margin-top: 30px !important;}
-  .ml_auto {margin-left: auto !important;}
-  .mr5 {margin-right: 5px !important;}
-  .mr10 {margin-right: 10px !important;}
-  .ml10 {margin-left: 10px !important;}
-  .mb_minus5 {margin-bottom: -5px !important;}
-  .mb15 {margin-bottom: 15px !important;}
-  .mb0 {margin-bottom: 0 !important;}
-  .pt0 {padding-top: 0 !important;}
-  .pt10 {padding-top: 10px !important;}
-  .pt15 {padding-top: 15px !important;}
-  .pt20 {padding-top: 20px !important;}
-  .pd5 {padding: 5px !important;}
-  .pb15 {padding-bottom: 15px !important;}
-  .pb20 {padding-bottom: 20px !important;}
 
-  @mixin flexbox {display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex;}
+input:focus,
+textarea:focus,
+select:focus,
+button:focus,
+a:active {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input:focus:not([type="checkbox"]):not([type="radio"]),
+select:focus,
+textarea:focus {
+  border-color: var(--normal);
+}
+input::placeholder {
+  color: var(--placeholder);
+}
+input.text_right::-webkit-input-placeholder,
+input.text_right::placeholder {
+  text-align: left;
+}
+
+textarea {
+  max-width: 100%;
+  margin: 0;
+  padding: 14px 15px;
+  font: normal 0.9375rem var(--font), sans-serif;
+  color: var(--normal);
+  vertical-align: middle;
+  line-height: 1.47;
+  background: var(--bg-light);
+  border: 1px solid var(--form-border);
+  border-radius: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+textarea::placeholder {
+  color: var(--placeholder);
+}
+textarea:only-child {
+  width: 100%;
+}
+
+hr {
+  height: 0;
+  margin: 15px -20px;
+  border: none;
+  border-top: 5px solid rgba($color: var(--normal-rgb), $alpha: 0.1);
+}
+article,
+aside,
+footer,
+header,
+hgroup,
+nav,
+section,
+figure {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+a[href^="tel"] {
+  text-decoration: underline;
+}
+sub {
+  font-family: var(--font-pre);
+  font-size: 0.75rem;
+  color: var(--light);
+}
+label sub {
+  margin-left: 5px;
+}
+del {
+  font-size: 0.625rem;
+  color: var(--normal);
+  opacity: 0.4;
+}
+
+iframe {
+  display: block;
+  width: 100vw;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    zoom: 0.8;
+  }
+}
+
+/******** common class ********/
+.hide {
+  position: absolute !important;
+  left: -999em;
+  top: -999em;
+  visibility: hidden;
+}
+.none {
+  display: none !important;
+}
+.bg_w {
+  background-color: #fff !important;
+}
+.bg_base {
+  background-color: var(--bg-base) !important;
+}
+.bg_beige {
+  background-color: #f9f4e5 !important;
+}
+.bg_red {
+  background: rgba($color: #d62300, $alpha: 0.05) !important;
+  color: var(--red);
+}
+.bg_green {
+  background: rgba($color: #198737, $alpha: 0.05) !important;
+  color: var(--green);
+}
+.bg_normal_w {
+  background: rgba($color: #502314, $alpha: 0.05) !important;
+}
+//   .bg_underdot {background: url("../images/bg_underdot.svg") repeat 0 0;}
+.bg_background_w {
+  background: rgba($color: #f5ebdc, $alpha: 0.3) !important;
+  &.alpha02 {
+    background: rgba($color: #f5ebdc, $alpha: 0.5) !important;
+  }
+}
+.pd0 {
+  padding: 0 !important;
+}
+.mg0 {
+  margin: 0 !important;
+}
+.block {
+  display: block !important;
+}
+.dflex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  &.column {
+    flex-direction: column;
+  }
+}
+.flex_none {
+  flex: none !important;
+}
+.flex_1 {
+  flex: 1;
+}
+.iblock {
+  display: inline-block !important;
+}
+.align_center {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  > input {
+    margin-bottom: auto;
+    + * {
+      flex: 1;
+    }
+    + .txt {
+      flex: none;
+    }
+  }
+}
+.underline {
+  text-decoration: underline;
+}
+.cen {
+  text-align: center !important;
+}
+.text_left {
+  text-align: left !important;
+}
+.text_right {
+  text-align: right !important;
+}
+.vtop {
+  margin-bottom: auto;
+  vertical-align: top;
+}
+.mid {
+  text-align: middle;
+}
+.right {
+  margin-left: auto;
+}
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.nowrap {
+  white-space: nowrap !important;
+}
+.read-only {
+  pointer-events: none;
+  touch-action: none;
+  user-select: none;
+}
+.justiy_left {
+  justify-content: left !important;
+}
+.justiy_cen {
+  justify-content: center !important;
+}
+.vertical_mid {
+  vertical-align: middle !important;
+}
+.border_trans {
+  border-color: transparent !important;
+}
+
+.mg_minus20 {
+  margin: -20px !important;
+}
+.mt_minus5 {
+  margin-top: -5px !important;
+}
+.mt0 {
+  margin-top: 0 !important;
+}
+.mt5 {
+  margin-top: 5px !important;
+}
+.mt10 {
+  margin-top: 10px !important;
+}
+.mt15 {
+  margin-top: 15px !important;
+}
+.mt20 {
+  margin-top: 20px !important;
+}
+.mt30 {
+  margin-top: 30px !important;
+}
+.ml_auto {
+  margin-left: auto !important;
+}
+.mr5 {
+  margin-right: 5px !important;
+}
+.mr10 {
+  margin-right: 10px !important;
+}
+.ml10 {
+  margin-left: 10px !important;
+}
+.mb_minus5 {
+  margin-bottom: -5px !important;
+}
+.mb15 {
+  margin-bottom: 15px !important;
+}
+.mb0 {
+  margin-bottom: 0 !important;
+}
+.pt0 {
+  padding-top: 0 !important;
+}
+.pt10 {
+  padding-top: 10px !important;
+}
+.pt15 {
+  padding-top: 15px !important;
+}
+.pt20 {
+  padding-top: 20px !important;
+}
+.pd5 {
+  padding: 5px !important;
+}
+.pb15 {
+  padding-bottom: 15px !important;
+}
+.pb20 {
+  padding-bottom: 20px !important;
+}
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 //   .c_btn {@include flexbox(); margin: 20px 0;
 //     &:first-child {margin-top: 0;}
@@ -267,7 +623,6 @@
 //     &:first-child {margin-top: 0 !important;}
 // }
 
-
 // /*** Product image size ***/
 // .prd_image {position: relative; min-width: 140px; height: 105px; text-align: center;
 //     img {height: 100%;}
@@ -287,1262 +642,1238 @@
 //     .cont {flex: 1; margin-top: auto; margin-bottom: auto;}
 // }
 
-
-  /********** layout **********/ .containerWrap {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    flex-direction: column;
-    overflow-y: auto;
-    overflow-x: hidden
-    //   overflow: hidden;
+/********** layout **********/
+.containerWrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  //   overflow: hidden;
 }
-
 
 /********** MAIN **********/
 /* profile */
 .profile-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../../assets/img/front_bg2.png'); /* 원하는 배경 이미지 경로 */
-    background-size: cover; /* 이미지가 전체를 덮도록 */
-    background-position: center; /* 이미지를 중앙에 배치 */
-    background-repeat: no-repeat; /* 이미지 반복하지 않음 */
-    height: auto;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/img/front_bg2.png"); /* 원하는 배경 이미지 경로 */
+  background-size: cover; /* 이미지가 전체를 덮도록 */
+  background-position: center; /* 이미지를 중앙에 배치 */
+  background-repeat: no-repeat; /* 이미지 반복하지 않음 */
+  height: auto;
+  padding: 20px;
 }
 
 .profile-background {
-    height: calc(100vh - 20px); /* 헤더가 추가되므로 필요시 조정 */
-    padding-top: 60px; /* 헤더 높이만큼 패딩 추가 */
+  height: calc(100vh - 20px); /* 헤더가 추가되므로 필요시 조정 */
+  padding-top: 60px; /* 헤더 높이만큼 패딩 추가 */
 }
 
 .profile-maintxt {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 10rem;
-    color: white;
-    text-align: center;
-    margin-bottom: 10px;
-    // text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-family: "Archivo";
+  font-size: 10rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  // text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .profile-explan {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 3rem;
-    font-weight: 500;
-    color: black;
-    text-align: center;
-    margin-bottom: 20px;
+  font-family: "Archivo";
+
+  font-size: 3rem;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .profile-content {
-    display: flex; /* 여전히 Flexbox를 사용하되, flex: 1;을 제거 */
-    justify-content: space-between; /* 요소 사이의 간격 조정 */
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
+  display: flex; /* 여전히 Flexbox를 사용하되, flex: 1;을 제거 */
+  justify-content: space-between; /* 요소 사이의 간격 조정 */
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
 }
 
 .profile-text-container {
-    width: 50%; /* 텍스트 컨테이너의 너비를 50%로 설정 */
-    text-align: center; /* 텍스트 중앙 정렬 */
+  width: 50%; /* 텍스트 컨테이너의 너비를 50%로 설정 */
+  text-align: center; /* 텍스트 중앙 정렬 */
 }
 
 .profile-text {
-    font-family: "Archivo";
-    font-size: 3rem;
-    color: #333;
-    margin: 10px 0;
-    transition: color 0.3s;
+  font-family: "Archivo";
+  font-size: 3rem;
+  color: #333;
+  margin: 10px 0;
+  transition: color 0.3s;
 
-    &:hover {
-        cursor: pointer;
-        color: #6c6b6b;
-    }
+  &:hover {
+    cursor: pointer;
+    color: #6c6b6b;
+  }
 }
 
 .profile-img-container {
-    width: 500px; /* 이미지 컨테이너의 너비를 50%로 설정 */
-    display: flex;
-    justify-content: center; /* 이미지를 중앙에 배치 */
+  width: 500px; /* 이미지 컨테이너의 너비를 50%로 설정 */
+  display: flex;
+  justify-content: center; /* 이미지를 중앙에 배치 */
 }
 
 .profile-profileImg {
-    max-width: 60%;
-    height: auto; /* 높이 자동 조정 */
-    filter: brightness(0.8) contrast(1.2) grayscale(0.5);
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 60%;
+  height: auto; /* 높이 자동 조정 */
+  filter: brightness(0.8) contrast(1.2) grayscale(0.5);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
-
-
 
 /* ABOUT ME */
 .about-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-size: cover; /* 이미지가 전체를 덮도록 */
-    background-position: center; /* 이미지를 중앙에 배치 */
-    background-repeat: no-repeat; /* 이미지 반복하지 않음 */
-    height: auto;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover; /* 이미지가 전체를 덮도록 */
+  background-position: center; /* 이미지를 중앙에 배치 */
+  background-repeat: no-repeat; /* 이미지 반복하지 않음 */
+  height: auto;
+  padding: 20px;
 }
 
 .about-title {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 4rem;
-    color: white;
-    text-align: center;
-    margin: 20px auto;
+  font-family: "Archivo";
+
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  margin: 20px auto;
 }
 
 .about-profile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
-    // max-width: 100%;
-    margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  // max-width: 100%;
+  margin: 20px auto;
 }
 
 .about-profileEmoji {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 50%;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 350px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .about-profile-details {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 3rem;
-    width: 60%;
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 3rem;
+  width: 60%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
 }
 
 .about-profile-item {
-    width: 50%;
-    display: flex;
+  width: 50%;
+  display: flex;
 }
 
 .about-profile-img {
-    width: 50px;
-    height: 50px;
-    background-size: cover;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
 }
 
 .about-profile-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 50px;
-    margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50px;
+  margin-left: 10px;
 }
 
 .about-profile-label {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 1.1rem;
-    font-weight: 500;
-    text-align: left;
-    color: #666; 
+  font-family: "Archivo";
+
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: left;
+  color: #666;
 }
 
 .about-profile-user {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-align: left;
-    color: #333;
+  font-family: "Archivo";
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+  color: #333;
 }
 
 .about-interview {
-    width: 70%;
-    margin-top: 50px;
+  width: 70%;
+  margin-top: 50px;
 }
 
 .about-interview-title {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: left;
-    color: white;
+  font-family: "Archivo";
+
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  color: white;
 }
 
 .about-interview-item {
-    width: 100%;
-    height: auto;
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
-    margin-top: 40px;
+  width: 100%;
+  height: auto;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  margin-top: 40px;
 }
 
 .about-interview-question {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-align: left;
-    color: #333;
-    margin-bottom: 15px;
+  font-family: "Archivo";
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: left;
+  color: #333;
+  margin-bottom: 15px;
 }
 
 .about-interview-answer {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: left;
-    color: #555; /* 색상을 조금 더 부드럽게 */
-    line-height: 1.6; /* 줄 간격 증가로 가독성 향상 */
-}
+  font-family: "Archivo";
 
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: left;
+  color: #555; /* 색상을 조금 더 부드럽게 */
+  line-height: 1.6; /* 줄 간격 증가로 가독성 향상 */
+}
 
 /* skills */
 .skills-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-size: cover; /* 이미지가 전체를 덮도록 */
-    background-position: center; /* 이미지를 중앙에 배치 */
-    background-repeat: no-repeat; /* 이미지 반복하지 않음 */
-    height: auto;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover; /* 이미지가 전체를 덮도록 */
+  background-position: center; /* 이미지를 중앙에 배치 */
+  background-repeat: no-repeat; /* 이미지 반복하지 않음 */
+  height: auto;
+  padding: 20px;
 }
 
 .skills-title {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 4rem;
-    color: white;
-    text-align: center;
-    margin: 20px auto;
+  font-family: "Archivo";
+
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  margin: 20px auto;
 }
 
 .skills-list {
-    width: 70%;
-    margin-top: 50px;
-    height: auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
-    margin-top: 40px;
+  width: 70%;
+  margin-top: 50px;
+  height: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  margin-top: 40px;
 }
 
 .skills-category {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 2rem;
-    font-weight: 700;
-    color: black;
-    margin-bottom: 10px;
+  font-family: "Archivo";
+
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 10px;
 }
 
 .skills-items {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 30px; /* 각 그룹 사이 간격 */
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px; /* 각 그룹 사이 간격 */
 }
 
 .skills-items img {
-    height: 40px;
-    width: 40px;
-    margin-right: 5px; /* 이미지와 텍스트 사이의 간격 */
+  height: 40px;
+  width: 40px;
+  margin-right: 5px; /* 이미지와 텍스트 사이의 간격 */
 }
 
 .skills-items li {
-    display: flex; /* 아이템을 수평으로 정렬 */
-    align-items: center; /* 이미지와 텍스트를 수직으로 가운데 정렬 */
-    margin-right: 10px; /* 이미지 간격 */
-    padding: 10px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
+  display: flex; /* 아이템을 수평으로 정렬 */
+  align-items: center; /* 이미지와 텍스트를 수직으로 가운데 정렬 */
+  margin-right: 10px; /* 이미지 간격 */
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
 }
-
 
 /* career */
 .career-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-size: cover; /* 이미지가 전체를 덮도록 */
-    background-position: center; /* 이미지를 중앙에 배치 */
-    background-repeat: no-repeat; /* 이미지 반복하지 않음 */
-    height: auto;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover; /* 이미지가 전체를 덮도록 */
+  background-position: center; /* 이미지를 중앙에 배치 */
+  background-repeat: no-repeat; /* 이미지 반복하지 않음 */
+  height: auto;
+  padding: 20px;
 }
 
 .career {
-    display: flex; 
-    justify-content: space-between; /* 두 요소 사이 간격 */
-    flex-wrap: wrap; 
-    width: 70%; 
+  display: flex;
+  justify-content: space-between; /* 두 요소 사이 간격 */
+  flex-wrap: wrap;
+  width: 70%;
 }
 
 .career-title {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 4rem;
-    color: white;
-    text-align: center;
-    margin: 20px auto;
+  font-family: "Archivo";
+
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  margin: 20px auto;
 }
 
 .career-contents {
-    width: 45%; /* 두 개씩 배치되도록 너비 조정 */
-    margin-top: 50px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
+  width: 45%; /* 두 개씩 배치되도록 너비 조정 */
+  margin-top: 50px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
 }
 
 .career-logo {
-    width: 150px;
-    height: auto;
+  width: 150px;
+  height: auto;
 }
 
 .career-name {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-left: 15px;
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 1.1rem; /* 살짝 큰 글씨 */
-    font-weight: 700;
-    color: #444; /* 어두운 글씨색 */
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  font-family: "Archivo";
+
+  font-size: 1.1rem; /* 살짝 큰 글씨 */
+  font-weight: 700;
+  color: #444; /* 어두운 글씨색 */
 }
 
 .career-date {
-    margin-left: 15px;
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 1rem;
-    font-weight: 500; /* 조금 더 가벼운 글씨 */
-    color: #888; /* 연한 회색 */
+  margin-left: 15px;
+  font-family: "Archivo";
+
+  font-size: 1rem;
+  font-weight: 500; /* 조금 더 가벼운 글씨 */
+  color: #888; /* 연한 회색 */
 }
 
 .career-content {
-    margin-top: 10px;
-    // margin-left: 15px;
-    font-family: "Archivo", sans-serif; /* 기본 폰트 설정 */
-    font-style: normal; /* 기울임을 일반으로 변경 */
-    font-size: 1.1rem; /* 약간 줄이기 */
-    font-weight: 600; /* 일반보다 약간 두껍게 설정 */
-    text-align: left;
-    color: #444; /* 텍스트 색상 다소 어둡게 */
-    line-height: 1.6; /* 줄 간격 증가 */
-    padding: 15px; /* 패딩 추가 */
-    border-radius: 8px; /* 모서리 둥글게 */
-    background-color: #f2f2f2; /* 부드러운 배경색 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 미세한 그림자 효과 */
+  margin-top: 10px;
+  // margin-left: 15px;
+  font-family: "Archivo", sans-serif; /* 기본 폰트 설정 */
+  font-style: normal; /* 기울임을 일반으로 변경 */
+  font-size: 1.1rem; /* 약간 줄이기 */
+  font-weight: 600; /* 일반보다 약간 두껍게 설정 */
+  text-align: left;
+  color: #444; /* 텍스트 색상 다소 어둡게 */
+  line-height: 1.6; /* 줄 간격 증가 */
+  padding: 15px; /* 패딩 추가 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  background-color: #f2f2f2; /* 부드러운 배경색 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 미세한 그림자 효과 */
 }
 
 .career-content p {
-    margin-bottom: 10px; /* 각 문단 간격 조절 */
+  margin-bottom: 10px; /* 각 문단 간격 조절 */
 }
 
 .career-content p::before {
-    content: "✔️"; /* 각 항목 앞에 체크마크 추가 */
-    margin-right: 5px; /* 체크마크와 텍스트 간격 조절 */
-    color: #007bff; /* 체크마크 색상 */
+  content: "✔️"; /* 각 항목 앞에 체크마크 추가 */
+  margin-right: 5px; /* 체크마크와 텍스트 간격 조절 */
+  color: #007bff; /* 체크마크 색상 */
 }
-
 
 /* project */
 .project-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-size: cover; /* 이미지가 전체를 덮도록 */
-    background-position: center; /* 이미지를 중앙에 배치 */
-    background-repeat: no-repeat; /* 이미지 반복하지 않음 */
-    height: auto;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover; /* 이미지가 전체를 덮도록 */
+  background-position: center; /* 이미지를 중앙에 배치 */
+  background-repeat: no-repeat; /* 이미지 반복하지 않음 */
+  height: auto;
+  padding: 20px;
 }
 
 .project {
-    display: flex; 
-    justify-content: space-between; /* 두 요소 사이 간격 */
-    flex-wrap: wrap; 
-    width: 70%; 
+  display: flex;
+  justify-content: space-between; /* 두 요소 사이 간격 */
+  flex-wrap: wrap;
+  width: 70%;
 }
 
 .project-title {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 4rem;
-    color: white;
-    text-align: center;
-    margin: 20px auto;
+  font-family: "Archivo";
+
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  margin: 20px auto;
 }
 
 .project-category {
-    display: flex; 
-    width: 70%; 
+  display: flex;
+  width: 70%;
 }
 
 .project-category-list {
-    background-color: rgb(53, 53, 53);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: rgb(53, 53, 53);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .project-category-button {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 1.5rem; // 살짝 큰 글씨
-    font-weight: 700;
-    color: white; // 글씨색
-    background-color: transparent;
-    border-radius: 12px;
-    padding: 10px;
-    margin-right: 10px;
-    transition: background-color 0.3s ease; // 부드러운 전환
+  font-family: "Archivo";
 
-    &:hover {
-        background-color: rgb(90, 90, 90);
-    }
+  font-size: 1.5rem; // 살짝 큰 글씨
+  font-weight: 700;
+  color: white; // 글씨색
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 10px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease; // 부드러운 전환
 
-    &.active {
-        background-color: rgb(114, 112, 112);
-    }
+  &:hover {
+    background-color: rgb(90, 90, 90);
+  }
+
+  &.active {
+    background-color: rgb(114, 112, 112);
+  }
 }
 
 .project-list {
-    display: flex; 
-    // justify-content: space-between; /* 두 요소 사이 간격 */
-    flex-wrap: wrap; 
-    width: 70%; 
+  display: flex;
+  // justify-content: space-between; /* 두 요소 사이 간격 */
+  flex-wrap: wrap;
+  width: 70%;
 }
 
 .project-contents {
-    width: 30%;
-    max-width: 1024px;
-    margin-top: 50px;
-    margin-right: 30px;
-    background-color: rgb(53, 53, 53);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  max-width: 1024px;
+  margin-top: 50px;
+  margin-right: 30px;
+  background-color: rgb(53, 53, 53);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .project-contents-taglist {
-    padding: 10px;
+  padding: 10px;
 }
 
 .project-tag {
-    width: auto; /* 태그 크기를 내용에 맞게 */
-    display: inline-block; /* 태그가 나란히 배치되도록 */
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 1.2rem; // 살짝 큰 글씨
-    font-weight: 700;
-    color: white; // 글씨색
-    margin-right: 10px;
-    margin-bottom: 10px; /* 태그 간격 조정 */
-    background-color: rgb(70, 70, 70); /* 더 어두운 배경색 */
-    border-radius: 8px; /* 모서리 둥글게 */
-    padding: 8px 15px; /* 패딩을 좌우로 더 줘서 태그가 넓어지게 */
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15); /* 살짝 더 깊은 그림자 */
+  width: auto; /* 태그 크기를 내용에 맞게 */
+  display: inline-block; /* 태그가 나란히 배치되도록 */
+  font-family: "Archivo";
+
+  font-size: 1.2rem; // 살짝 큰 글씨
+  font-weight: 700;
+  color: white; // 글씨색
+  margin-right: 10px;
+  margin-bottom: 10px; /* 태그 간격 조정 */
+  background-color: rgb(70, 70, 70); /* 더 어두운 배경색 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  padding: 8px 15px; /* 패딩을 좌우로 더 줘서 태그가 넓어지게 */
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15); /* 살짝 더 깊은 그림자 */
 }
 
 .project-detail {
-    margin-top: 10px;
-    font-family: "Archivo", sans-serif; /* 기본 폰트 설정 */
-    line-height: 1.6; /* 줄 간격 증가 */
-    padding: 15px; /* 패딩 추가 */
-    border-radius: 8px; /* 모서리 둥글게 */
-    background-color: #3d3d3d; /* 부드러운 배경색 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 미세한 그림자 효과 */
-    height: 250px;
+  margin-top: 10px;
+  font-family: "Archivo", sans-serif; /* 기본 폰트 설정 */
+  line-height: 1.6; /* 줄 간격 증가 */
+  padding: 15px; /* 패딩 추가 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  background-color: #3d3d3d; /* 부드러운 배경색 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 미세한 그림자 효과 */
+  height: 250px;
 }
 
 .project-img img {
-    width: 100%; /* 가로 100% */
-    height: 300px; /* 원하는 높이로 설정 */
-    object-fit: cover; /* 이미지 비율을 유지하면서 잘라냄 */
+  width: 100%; /* 가로 100% */
+  height: 300px; /* 원하는 높이로 설정 */
+  object-fit: cover; /* 이미지 비율을 유지하면서 잘라냄 */
 }
 
 .project-name {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 1.5rem; /* 살짝 큰 글씨 */
-    font-weight: 700;
-    color: white; /* 어두운 글씨색 */
+  font-family: "Archivo";
+
+  font-size: 1.5rem; /* 살짝 큰 글씨 */
+  font-weight: 700;
+  color: white; /* 어두운 글씨색 */
 }
 
 .project-details {
-    margin-top: 10px;
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 1rem; /* 살짝 큰 글씨 */
-    font-weight: 700;
-    color: #bbb; /* 어두운 글씨색 */
+  margin-top: 10px;
+  font-family: "Archivo";
+
+  font-size: 1rem; /* 살짝 큰 글씨 */
+  font-weight: 700;
+  color: #bbb; /* 어두운 글씨색 */
 }
 
-.project-readme, .project-site {
-    margin-top: 10px;
-    margin-right: 10px;
-    background-color: rgb(131, 131, 131);
-    padding: 5px;
-    border-radius: 7px; /* 모서리 둥글게 */
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 1rem;
-    font-weight: 700;
-    color: white;
+.project-readme,
+.project-site {
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: rgb(131, 131, 131);
+  padding: 5px;
+  border-radius: 7px; /* 모서리 둥글게 */
+  font-family: "Archivo";
+
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
 }
 
 .project-date {
-    margin-top: 10px;
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 1rem;
-    font-weight: 500; /* 조금 더 가벼운 글씨 */
-    color: #888; /* 연한 회색 */
-}
+  margin-top: 10px;
+  font-family: "Archivo";
 
+  font-size: 1rem;
+  font-weight: 500; /* 조금 더 가벼운 글씨 */
+  color: #888; /* 연한 회색 */
+}
 
 /* education */
 .education-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-size: cover; /* 이미지가 전체를 덮도록 */
-    background-position: center; /* 이미지를 중앙에 배치 */
-    background-repeat: no-repeat; /* 이미지 반복하지 않음 */
-    height: auto;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover; /* 이미지가 전체를 덮도록 */
+  background-position: center; /* 이미지를 중앙에 배치 */
+  background-repeat: no-repeat; /* 이미지 반복하지 않음 */
+  height: auto;
+  padding: 20px;
 }
 
 .education {
-    display: flex; 
-    justify-content: space-between; /* 두 요소 사이 간격 */
-    flex-wrap: wrap; 
-    width: 70%; 
+  display: flex;
+  justify-content: space-between; /* 두 요소 사이 간격 */
+  flex-wrap: wrap;
+  width: 70%;
 }
 
 .education-title {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 4rem;
-    color: white;
-    text-align: center;
-    margin: 20px auto;
+  font-family: "Archivo";
+
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  margin: 20px auto;
 }
 
 .education-contents {
-    width: 45%; /* 두 개씩 배치되도록 너비 조정 */
-    margin-top: 50px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
+  width: 45%; /* 두 개씩 배치되도록 너비 조정 */
+  margin-top: 50px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
 }
 
 .education-logo {
-    margin-left: 15px;
-    width: 40px;
-    height: auto;
+  margin-left: 15px;
+  width: 40px;
+  height: auto;
 }
 
 .education-name {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-left: 15px;
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 1.1rem; /* 살짝 큰 글씨 */
-    font-weight: 700;
-    color: #444; /* 어두운 글씨색 */
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  font-family: "Archivo";
+
+  font-size: 1.1rem; /* 살짝 큰 글씨 */
+  font-weight: 700;
+  color: #444; /* 어두운 글씨색 */
 }
 
 .education-date {
-    margin-left: 15px;
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 1rem;
-    font-weight: 500; /* 조금 더 가벼운 글씨 */
-    color: #888; /* 연한 회색 */
+  margin-left: 15px;
+  font-family: "Archivo";
+
+  font-size: 1rem;
+  font-weight: 500; /* 조금 더 가벼운 글씨 */
+  color: #888; /* 연한 회색 */
 }
 
 .education-content {
-    margin-top: 10px;
-    // margin-left: 15px;
-    font-family: "Archivo", sans-serif; /* 기본 폰트 설정 */
-    font-style: normal; /* 기울임을 일반으로 변경 */
-    font-size: 1.1rem; /* 약간 줄이기 */
-    font-weight: 600; /* 일반보다 약간 두껍게 설정 */
-    text-align: left;
-    color: #444; /* 텍스트 색상 다소 어둡게 */
-    line-height: 1.6; /* 줄 간격 증가 */
-    padding: 15px; /* 패딩 추가 */
-    border-radius: 8px; /* 모서리 둥글게 */
-    background-color: #f2f2f2; /* 부드러운 배경색 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 미세한 그림자 효과 */
+  margin-top: 10px;
+  // margin-left: 15px;
+  font-family: "Archivo", sans-serif; /* 기본 폰트 설정 */
+  font-style: normal; /* 기울임을 일반으로 변경 */
+  font-size: 1.1rem; /* 약간 줄이기 */
+  font-weight: 600; /* 일반보다 약간 두껍게 설정 */
+  text-align: left;
+  color: #444; /* 텍스트 색상 다소 어둡게 */
+  line-height: 1.6; /* 줄 간격 증가 */
+  padding: 15px; /* 패딩 추가 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  background-color: #f2f2f2; /* 부드러운 배경색 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 미세한 그림자 효과 */
 }
 
 .education-content p {
-    margin-bottom: 10px; /* 각 문단 간격 조절 */
+  margin-bottom: 10px; /* 각 문단 간격 조절 */
 }
 
 .education-content p::before {
-    content: "✔️"; /* 각 항목 앞에 체크마크 추가 */
-    margin-right: 5px; /* 체크마크와 텍스트 간격 조절 */
-    color: #007bff; /* 체크마크 색상 */
+  content: "✔️"; /* 각 항목 앞에 체크마크 추가 */
+  margin-right: 5px; /* 체크마크와 텍스트 간격 조절 */
+  color: #007bff; /* 체크마크 색상 */
 }
-
 
 /* thank you */
 .thank-container {
-    background-image: url('../../assets/img/front_bg2.png'); /* 원하는 배경 이미지 경로 */
-    background-size: cover; /* 이미지가 전체를 덮도록 */
-    background-position: center; /* 이미지를 중앙에 배치 */
-    background-repeat: no-repeat; /* 이미지 반복하지 않음 */
-    display: flex; /* 플렉스 박스로 설정 */
-    flex-direction: column; /* 세로 방향으로 배치 */
-    min-height: 100vh; /* 최소 높이를 100vh로 설정 */
+  background-image: url("../../assets/img/front_bg2.png"); /* 원하는 배경 이미지 경로 */
+  background-size: cover; /* 이미지가 전체를 덮도록 */
+  background-position: center; /* 이미지를 중앙에 배치 */
+  background-repeat: no-repeat; /* 이미지 반복하지 않음 */
+  display: flex; /* 플렉스 박스로 설정 */
+  flex-direction: column; /* 세로 방향으로 배치 */
+  min-height: 100vh; /* 최소 높이를 100vh로 설정 */
 }
 
 .thank-background {
-    display: flex;
-    flex-direction: column; /* 세로 방향으로 배치 */
-    justify-content: center; /* 수직 중앙 정렬 */
-    align-items: center; /* 수평 중앙 정렬 */
-    flex-grow: 1; /* 공간을 차지하여 푸터가 아래에 위치하도록 함 */
+  display: flex;
+  flex-direction: column; /* 세로 방향으로 배치 */
+  justify-content: center; /* 수직 중앙 정렬 */
+  align-items: center; /* 수평 중앙 정렬 */
+  flex-grow: 1; /* 공간을 차지하여 푸터가 아래에 위치하도록 함 */
 }
 
 .thank-maintext {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 10rem;
-    color: white;
-    text-align: center;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-family: "Archivo";
+
+  font-size: 10rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .thank-endMessage {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 3rem;
-    color: white;
-    text-align: center;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
+  font-family: "Archivo";
 
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
 
 /* Header.scss */
 .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px 10%;
-    background-color: rgba(255, 255, 255, 0.9);
-    // border-radius: 8px;
-    // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: fixed; /* 헤더를 고정 */
-    top: 0; /* 페이지 상단에 고정 */
-    left: 0; /* 페이지의 왼쪽에 고정 */
-    z-index: 1000; /* 다른 요소 위에 보이도록 설정 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 10%;
+  background-color: rgba(255, 255, 255, 0.9);
+  // border-radius: 8px;
+  // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed; /* 헤더를 고정 */
+  top: 0; /* 페이지 상단에 고정 */
+  left: 0; /* 페이지의 왼쪽에 고정 */
+  z-index: 1000; /* 다른 요소 위에 보이도록 설정 */
 }
 
 .header-title {
-    font-family: "Archivo";
-    font-size: 2.5rem; /* 타이틀 크기 */
-    color: #333; /* 타이틀 색상 */
-    margin: 0; /* 기본 여백 제거 */
-    cursor: pointer;
+  font-family: "Archivo";
+  font-size: 2.5rem; /* 타이틀 크기 */
+  color: #333; /* 타이틀 색상 */
+  margin: 0; /* 기본 여백 제거 */
+  cursor: pointer;
 }
 
 .header-links {
-    display: flex;
-    gap: 30px; /* 제목 간격 */
+  display: flex;
+  gap: 30px; /* 제목 간격 */
 }
 
 .header-link {
-    font-family: "Archivo";
-    font-size: 1.5rem; /* 섹션 제목 크기 */
-    color: black; /* 제목 색상 */
-    cursor: pointer; /* 커서 변경 */
-    transition: color 0.3s; /* 색상 전환 효과 */
-    
-    &:hover {
-        color: #999; /* 호버 시 색상 변경 */
-    }
-}
+  font-family: "Archivo";
+  font-size: 1.5rem; /* 섹션 제목 크기 */
+  color: black; /* 제목 색상 */
+  cursor: pointer; /* 커서 변경 */
+  transition: color 0.3s; /* 색상 전환 효과 */
 
+  &:hover {
+    color: #999; /* 호버 시 색상 변경 */
+  }
+}
 
 /* Footer.scss */
 .footer-container {
-    padding: 20px;
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-
-
 .footer-text {
-    font-family: "Archivo";
-    font-style: italic;
-    font-size: 1.2rem;
-    text-align: center;
-    /* 가운데 정렬 */
-    color: rgb(166 166 166);
+  font-family: "Archivo";
+
+  font-size: 1.2rem;
+  text-align: center;
+  /* 가운데 정렬 */
+  color: rgb(166 166 166);
 }
 
 /* controlbtn */
 .control-arrow {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    opacity: 0.7;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  opacity: 0.7;
 
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
 }
 
 .control-arrow-btn {
-    font-size: 2.5rem;
-    color: black;
+  font-size: 2.5rem;
+  color: black;
 }
 
 .controlbtn-github {
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    opacity: 0.7;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  opacity: 0.7;
 
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
 }
 
 .control-github {
-    font-size: 2.5rem;
-    color: black;
+  font-size: 2.5rem;
+  color: black;
 }
-
 
 /* Readme */
 /* Readme background overlay */
 .Readme-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8); /* 배경을 어둡게 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  /* Readme modal box */
-  .Readme-container {
-    width: 700px;
-        padding: 35px;
-        /* 패딩 증가 */
-        background-color: #ffffff;
-        border-radius: 15px;
-        /* 모서리 더 둥글게 */
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-        /* 그림자 강조 */
-        text-align: left;
-        position: relative;
-        overflow-y: auto;
-        max-height: 90vh;
-    }
-    
-    /* Close button */
-    .Readme-head {
-        display: flex;
-        justify-content: flex-end; /* 오른쪽 정렬 */
-        position: sticky; /* 스크롤 시에도 위치 유지 */
-        top: 0; /* 상단에 고정 */
-        background-color: transparent; /* 배경색 투명하게 설정 */
-        z-index: 1; /* 모달 내용 위에 표시 */
-        margin-top: -20px;
-    }
-    
-    .Readme-close-button {
-        font-size: 32px;
-        /* 버튼 크기 증가 */
-        color: #444;
-        /* 버튼 색상 변경 */
-        cursor: pointer;
-        transition: color 0.3s;
-    }
-    
-    .Readme-close-button:hover {
-        color: #999;
-        /* 마우스 오버 시 색상 변화 */
-    }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* 배경을 어둡게 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
-    .Readme-imgArea {
-        position: relative; /* 부모 요소를 기준으로 절대 위치 지정 */
-    }
-    
-    .Readme-imageClose-button {
-        font-size: 32px;
-        color: #444;
-        cursor: pointer;
-        transition: color 0.3s;
-        position: absolute; /* 절대 위치로 설정 */
-        top: -30px; /* 상단 여백 */
-        right: -10px; /* 우측 여백 */
-        background: none; /* 버튼 배경 제거 */
-        border: none; /* 버튼 테두리 제거 */
-    }
-    
+/* Readme modal box */
+.Readme-container {
+  width: 700px;
+  padding: 35px;
+  /* 패딩 증가 */
+  background-color: #ffffff;
+  border-radius: 15px;
+  /* 모서리 더 둥글게 */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  /* 그림자 강조 */
+  text-align: left;
+  position: relative;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+/* Close button */
+.Readme-head {
+  display: flex;
+  justify-content: flex-end; /* 오른쪽 정렬 */
+  position: sticky; /* 스크롤 시에도 위치 유지 */
+  top: 0; /* 상단에 고정 */
+  background-color: transparent; /* 배경색 투명하게 설정 */
+  z-index: 1; /* 모달 내용 위에 표시 */
+  margin-top: -20px;
+}
+
+.Readme-close-button {
+  font-size: 32px;
+  /* 버튼 크기 증가 */
+  color: #444;
+  /* 버튼 색상 변경 */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.Readme-close-button:hover {
+  color: #999;
+  /* 마우스 오버 시 색상 변화 */
+}
+
+.Readme-imgArea {
+  position: relative; /* 부모 요소를 기준으로 절대 위치 지정 */
+}
+
+.Readme-imageClose-button {
+  font-size: 32px;
+  color: #444;
+  cursor: pointer;
+  transition: color 0.3s;
+  position: absolute; /* 절대 위치로 설정 */
+  top: -30px; /* 상단 여백 */
+  right: -10px; /* 우측 여백 */
+  background: none; /* 버튼 배경 제거 */
+  border: none; /* 버튼 테두리 제거 */
+}
 
 /* Title */
 .Readme-title {
-    font-family: "Archivo", sans-serif;
-    font-size: 28px; /* 제목 크기 증가 */
-    margin-bottom: 15px; /* 여백 증가 */
-    color: #222; /* 타이틀 색상 */
-    font-weight: bold; /* 타이틀 굵게 */
+  font-family: "Archivo", sans-serif;
+  font-size: 28px; /* 제목 크기 증가 */
+  margin-bottom: 15px; /* 여백 증가 */
+  color: #222; /* 타이틀 색상 */
+  font-weight: bold; /* 타이틀 굵게 */
 }
-  
-  /* Date */
-  .Readme-date {
-    font-family: "Archivo", sans-serif;
-    font-size: 16px; /* 날짜 크기 증가 */
-    color: #aaa; /* 날짜 색상 변경 */
-    margin-bottom: 20px;
-  }
-  
-  /* Section headers */
-  .Readme-description,
-  .Readme-tech-stack,
-  .Readme-features,
-  .Readme-role,
-  .Readme-libraries,
-  .Readme-reflections,
-  .Readme-image,
-  .Readme-challenges,
-  .Readme-outcomes {
-    margin-top: 50px; /* 섹션 위쪽 간격 증가 */
-  }
 
-  .Readme-description h3,
-  .Readme-tech-stack h3,
-  .Readme-features h3,
-  .Readme-role h3,
-  .Readme-libraries h3,
-  .Readme-reflections h3,
-  .Readme-image h3,
-  .Readme-challenges h3,
-  .Readme-outcomes h3 {
-    font-family: "Archivo", sans-serif;
-    font-size: 20px; /* 섹션 헤더 크기 증가 */
-    color: #000; /* 섹션 헤더 색상은 굵은 검은색 */
-    display: flex; /* 플렉스 박스 사용 */
-    align-items: center; /* 아이콘과 텍스트 정렬 */
-  }
-  
-  /* Icon styles */
-  .Readme-icon {
-    margin-right: 10px; /* 아이콘과 텍스트 간격 */
-    width: 40px;
-    height: auto;
-  }
-  
-  /* Project image placeholder */
-  .Readme-image-placeholder {
-    width: 100%;
-    height: 200px;
-    background-color: #f0f0f0; /* 더 연한 회색 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #888;
-    border: 1px dashed #555; /* 테두리 색상 변경 */
-    margin-bottom: 20px;
-    border-radius: 8px; /* 모서리 둥글게 */
-  }
+/* Date */
+.Readme-date {
+  font-family: "Archivo", sans-serif;
+  font-size: 16px; /* 날짜 크기 증가 */
+  color: #aaa; /* 날짜 색상 변경 */
+  margin-bottom: 20px;
+}
 
-  .Readme-project-image {
-    width: 50%; /* 슬라이드 내의 이미지가 전체 너비를 차지 */
-    height: auto; /* 높이는 자동 조정 */
-    object-fit: cover; /* 비율 유지 및 잘라내기 */
-    border-radius: 10px; /* 이미지 모서리 둥글게 */
-    margin: auto; /* 가운데 정렬 */
-    display: block; /* 블록 요소로 설정하여 margin: auto;가 작동하도록 함 */
-    align-items: center; /* 가운데 정렬 */
+/* Section headers */
+.Readme-description,
+.Readme-tech-stack,
+.Readme-features,
+.Readme-role,
+.Readme-libraries,
+.Readme-reflections,
+.Readme-image,
+.Readme-challenges,
+.Readme-outcomes {
+  margin-top: 50px; /* 섹션 위쪽 간격 증가 */
+}
+
+.Readme-description h3,
+.Readme-tech-stack h3,
+.Readme-features h3,
+.Readme-role h3,
+.Readme-libraries h3,
+.Readme-reflections h3,
+.Readme-image h3,
+.Readme-challenges h3,
+.Readme-outcomes h3 {
+  font-family: "Archivo", sans-serif;
+  font-size: 20px; /* 섹션 헤더 크기 증가 */
+  color: #000; /* 섹션 헤더 색상은 굵은 검은색 */
+  display: flex; /* 플렉스 박스 사용 */
+  align-items: center; /* 아이콘과 텍스트 정렬 */
+}
+
+/* Icon styles */
+.Readme-icon {
+  margin-right: 10px; /* 아이콘과 텍스트 간격 */
+  width: 40px;
+  height: auto;
+}
+
+/* Project image placeholder */
+.Readme-image-placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: #f0f0f0; /* 더 연한 회색 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+  border: 1px dashed #555; /* 테두리 색상 변경 */
+  margin-bottom: 20px;
+  border-radius: 8px; /* 모서리 둥글게 */
+}
+
+.Readme-project-image {
+  width: 50%; /* 슬라이드 내의 이미지가 전체 너비를 차지 */
+  height: auto; /* 높이는 자동 조정 */
+  object-fit: cover; /* 비율 유지 및 잘라내기 */
+  border-radius: 10px; /* 이미지 모서리 둥글게 */
+  margin: auto; /* 가운데 정렬 */
+  display: block; /* 블록 요소로 설정하여 margin: auto;가 작동하도록 함 */
+  align-items: center; /* 가운데 정렬 */
 }
 
 .swiper-slide {
-    display: flex; /* 플렉스 박스 사용 */
-    justify-content: center; /* 수평 가운데 정렬 */
-    align-items: center; /* 수직 가운데 정렬 */
+  display: flex; /* 플렉스 박스 사용 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
 }
 
-  
-  /* General text styles */
-  .Readme-description p,
-  .Readme-tech-stack p,
-  .Readme-features p,
-  .Readme-role p,
-  .Readme-libraries p,
-  .Readme-reflections p,
-  .Readme-challenges p,
-  .Readme-outcomes p {
-    line-height: 1.6; /* 줄 높이 증가 */
-    color: #666; /* 설명은 연한 색으로 변경 */
-  }
-  
-  
-  /* Project demo link */
-  .Readme-link {
-    text-align: center;
-  }
+/* General text styles */
+.Readme-description p,
+.Readme-tech-stack p,
+.Readme-features li,
+.Readme-role p,
+.Readme-libraries p,
+.Readme-reflections p,
+.Readme-challenges p,
+.Readme-outcomes p {
+  line-height: 1.6; /* 줄 높이 증가 */
+  color: #666; /* 설명은 연한 색으로 변경 */
+}
 
-  .Readme-demo-link {
-    display: inline-block;
-    margin-top: 20px; /* 상단 여백 증가 */
-    padding: 12px 25px; /* 버튼 패딩 증가 */
-    background-color: #313131; /* 버튼 배경색을 빨간색으로 변경 */
-    color: #fff; /* 버튼 텍스트 색상 */
-    text-decoration: none;
-    border-radius: 15px; /* 버튼 모서리를 둥글게 */
-    font-size: 18px; /* 버튼 텍스트 크기 증가 */
-    border: none; /* 테두리 제거 */
-    transition: background-color 0.3s, transform 0.2s; /* 부드러운 변환 효과 */
-  }
-  
-  .Readme-demo-link:hover {
-    background-color: #c7c7c7; /* 버튼 오버 시 색상 변화 */
-    transform: translateY(-2px); /* 버튼 클릭 효과 */
-  }
-  
-  .Readme-demo-link:active {
-    transform: translateY(0); /* 클릭 시 원래 위치로 */
-  }
+/* Project demo link */
+.Readme-link {
+  text-align: center;
+}
 
+.Readme-demo-link {
+  display: inline-block;
+  margin-top: 20px; /* 상단 여백 증가 */
+  padding: 12px 25px; /* 버튼 패딩 증가 */
+  background-color: #313131; /* 버튼 배경색을 빨간색으로 변경 */
+  color: #fff; /* 버튼 텍스트 색상 */
+  text-decoration: none;
+  border-radius: 15px; /* 버튼 모서리를 둥글게 */
+  font-size: 18px; /* 버튼 텍스트 크기 증가 */
+  border: none; /* 테두리 제거 */
+  transition: background-color 0.3s, transform 0.2s; /* 부드러운 변환 효과 */
+}
+
+.Readme-demo-link:hover {
+  background-color: #c7c7c7; /* 버튼 오버 시 색상 변화 */
+  transform: translateY(-2px); /* 버튼 클릭 효과 */
+}
+
+.Readme-demo-link:active {
+  transform: translateY(0); /* 클릭 시 원래 위치로 */
+}
 
 /** 테블릿 */
 @media screen and (max-width: 1024px) {
-    // 프로필
-    .profile-maintxt {
-        font-size: 6rem;
-    }
+  // 프로필
+  .profile-maintxt {
+    font-size: 6rem;
+  }
 
-    .profile-explan {
-        font-size: 2rem;
-    }
+  .profile-explan {
+    font-size: 2rem;
+  }
 
-    .profile-content {
-        // flex-direction: column;
-        // align-items: center;
-    }
+  .profile-content {
+    // flex-direction: column;
+    // align-items: center;
+  }
 
-    .profile-profileImg {
-        width: 30vh;
-        height: auto;
-    }
+  .profile-profileImg {
+    width: 30vh;
+    height: auto;
+  }
 
+  //about me
+  .about-profile {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    //about me
-    .about-profile {
-        flex-direction: column;
-        align-items: center;
-    }
+  .about-profile-details {
+    margin-top: 20px;
+  }
 
-    .about-profile-details {
-        margin-top: 20px;
-    }
+  .about-profile-item {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
 
-    .about-profile-item {
-        width: 100%;
-        margin-bottom: 1.5rem;
-    }
+  .about-profile-text {
+    height: auto;
+  }
 
-    .about-profile-text {
-        height: auto;
-    }
+  //skills
+  .skills-items li {
+    margin-top: 10px;
+  }
 
+  //career
+  .career-contents {
+    width: 100%; /* 두 개씩 배치되도록 너비 조정 */
+  }
 
-    //skills
-    .skills-items li {
-        margin-top: 10px;
-    }
+  //project
+  .project-category {
+    display: flex;
+    justify-content: center;
+  }
 
+  .project-contents {
+    width: 45%;
+    margin-top: 50px;
+    margin-right: 10px;
+  }
 
-    //career
-    .career-contents {
-        width: 100%; /* 두 개씩 배치되도록 너비 조정 */
-    }
+  //education
+  .education-contents {
+    width: 100%; /* 두 개씩 배치되도록 너비 조정 */
+  }
 
+  //component
+  .header-container {
+    padding: 15px 5%; /* 패딩 조정 */
+  }
 
-    //project
-    .project-category {
-        display: flex; 
-        justify-content: center;
-    }
+  .header-title {
+    font-size: 2rem; /* 타이틀 크기 감소 */
+  }
 
-    .project-contents {
-        width: 45%;
-        margin-top: 50px;
-        margin-right: 10px;
-    }
+  .header-links {
+    gap: 20px; /* 링크 간격 조정 */
+  }
 
-
-    //education
-    .education-contents {
-        width: 100%; /* 두 개씩 배치되도록 너비 조정 */
-    }
-
-    //component
-    .header-container {
-        padding: 15px 5%; /* 패딩 조정 */
-    }
-
-    .header-title {
-        font-size: 2rem; /* 타이틀 크기 감소 */
-    }
-
-    .header-links {
-        gap: 20px; /* 링크 간격 조정 */
-    }
-
-    .header-link {
-        font-size: 1.3rem; /* 링크 크기 감소 */
-    }
+  .header-link {
+    font-size: 1.3rem; /* 링크 크기 감소 */
+  }
 }
-
-
 
 /** 모바일 */
 @media screen and (max-width: 640px) {
-    //프로필
-    .profile-maintxt {
-        font-size: 4rem;
-    }
+  //프로필
+  .profile-maintxt {
+    font-size: 4rem;
+  }
 
-    .profile-explan {
-        font-size: 0.9rem;
-    }
+  .profile-explan {
+    font-size: 0.9rem;
+  }
 
-    .profile-text-container {
-        position: absolute !important; left: -999em; top: -999em; visibility: hidden;}
+  .profile-text-container {
+    position: absolute !important;
+    left: -999em;
+    top: -999em;
+    visibility: hidden;
+  }
 
-    .profile-background {
-        // padding-top: 150px; /* 헤더 높이만큼 패딩 추가 */
-    }
+  .profile-background {
+    // padding-top: 150px; /* 헤더 높이만큼 패딩 추가 */
+  }
 
-    .profile-text {
-        font-size: 2rem;
-    }
+  .profile-text {
+    font-size: 2rem;
+  }
 
-    .profile-profileImg {
-        width: 40vh;
-        height: auto;
-    }
+  .profile-profileImg {
+    width: 40vh;
+    height: auto;
+  }
 
+  //about me
+  .about-title h1,
+  .skills-title h1,
+  .career-title h1,
+  .project-title h1,
+  .education-title h1 {
+    font-size: 3rem;
+  }
 
-    //about me
-    .about-title h1, .skills-title h1, .career-title h1, .project-title h1, .education-title h1{
-        font-size: 3rem;
-    }
-    
-    .about-profile {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .about-profile-details {
-        width: 100%;
-        padding: 10px;
-        row-gap: 1rem;
-    }
-    
-    .about-profile-item {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 1.5rem;
-    }
-    
-    .about-profile-text {
-        width: 100%;
-        margin: auto;
-    }
-    
-    .about-profile-img {
-        width: 40px; /* 모바일에서 이미지 크기 조정 */
-        height: 40px; /* 모바일에서 이미지 크기 조정 */
-    }
-    
-    .about-profile-label {
-        font-size: 1rem; /* 레이블 폰트 크기 조정 */
-        text-align: center;
-    }
+  .about-profile {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .about-profile-user {
-        font-size: 1rem; /* 사용자 이름 폰트 크기 조정 */
-        text-align: center;
-    }
-    
-    .about-interview-title {
-        text-align: center;
-    }
+  .about-profile-details {
+    width: 100%;
+    padding: 10px;
+    row-gap: 1rem;
+  }
 
-    .about-interview {
-        width: 100%;
-    }
+  .about-profile-item {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
 
-    //skills
-    .skills-items li {
-        margin-top: 10px;
-    }
+  .about-profile-text {
+    width: 100%;
+    margin: auto;
+  }
 
-    .skills-list {
-        width: 100%;
-    }
+  .about-profile-img {
+    width: 40px; /* 모바일에서 이미지 크기 조정 */
+    height: 40px; /* 모바일에서 이미지 크기 조정 */
+  }
 
+  .about-profile-label {
+    font-size: 1rem; /* 레이블 폰트 크기 조정 */
+    text-align: center;
+  }
 
-    //career
-    .career {
-        width: 100%;
-    }
+  .about-profile-user {
+    font-size: 1rem; /* 사용자 이름 폰트 크기 조정 */
+    text-align: center;
+  }
 
-    .career-contents {
-        width: 100%; /* 두 개씩 배치되도록 너비 조정 */
-    }
+  .about-interview-title {
+    text-align: center;
+  }
 
+  .about-interview {
+    width: 100%;
+  }
 
-    //project
-    .project-category {
-        display: flex; 
-        justify-content: center;
-        width: 90%;
-    }
+  //skills
+  .skills-items li {
+    margin-top: 10px;
+  }
 
-    .project-list {
-        width: 100%;
-    }
+  .skills-list {
+    width: 100%;
+  }
 
-    .project-contents {
-        width: 100%;
-        margin-top: 50px;
-        margin-right: 10px;
-    }
+  //career
+  .career {
+    width: 100%;
+  }
 
+  .career-contents {
+    width: 100%; /* 두 개씩 배치되도록 너비 조정 */
+  }
 
-    //education
-    .education {
-        width: 100%;
-    }
+  //project
+  .project-category {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
 
-    .education-contents {
-        width: 100%; /* 두 개씩 배치되도록 너비 조정 */
-    }
+  .project-list {
+    width: 100%;
+  }
 
-    //thank you
-    .thank-maintext {
-        font-size: 5rem;
-    }
+  .project-contents {
+    width: 100%;
+    margin-top: 50px;
+    margin-right: 10px;
+  }
 
-    .thank-endMessage {
-        font-size: 2rem;
-    }
+  //education
+  .education {
+    width: 100%;
+  }
 
+  .education-contents {
+    width: 100%; /* 두 개씩 배치되도록 너비 조정 */
+  }
 
-    //component
-    .footer-text {
-        font-size: 1rem;
-    }
+  //thank you
+  .thank-maintext {
+    font-size: 5rem;
+  }
 
-    .header-container {
-        display: flex;
-        flex-direction: column; /* 세로로 쌓이게 변경 */
-        align-items: center; /* 중앙 정렬 */
-        justify-content: center; /* 수직 중앙 정렬 */
-        width: 100%; /* 전체 화면 너비 사용 */
-        padding: 5px 3%; /* 패딩 조정 */
-    }
-    
-    .header-title {
-        font-size: 1.6rem; /* 타이틀 크기 */
-        margin-bottom: 10px; /* 타이틀과 링크 간격 */
-        margin-top: 5px;
-        text-align: center; /* 중앙 정렬 */
-    }
-    
-    .header-links {
-        display: flex;
-        align-items: center; /* 수직 중앙 정렬 */
-        justify-content: center; /* 링크들을 수평 중앙 정렬 */
-        gap: 3px; /* 링크 간 간격 */
-        white-space: nowrap; /* 텍스트 줄바꿈 방지 */
-        flex-wrap: nowrap; /* 링크들이 한 줄에 유지되도록 */
-    }
-    
-    .header-link {
-        font-size: 0.8rem; /* 링크 크기 감소 */
-        text-align: center; /* 중앙 정렬 */
-        padding: 5px; /* 링크 주변 패딩 */
-        transition: color 0.3s; /* 색상 전환 효과 */
-        white-space: nowrap; /* 줄바꿈 방지 */
-    }
-    
+  .thank-endMessage {
+    font-size: 2rem;
+  }
 
+  //component
+  .footer-text {
+    font-size: 1rem;
+  }
 
-    //readme
-    .Readme-demo-link {
-        font-size: 13px;
-    }
+  .header-container {
+    display: flex;
+    flex-direction: column; /* 세로로 쌓이게 변경 */
+    align-items: center; /* 중앙 정렬 */
+    justify-content: center; /* 수직 중앙 정렬 */
+    width: 100%; /* 전체 화면 너비 사용 */
+    padding: 5px 3%; /* 패딩 조정 */
+  }
 
-}   
+  .header-title {
+    font-size: 1.6rem; /* 타이틀 크기 */
+    margin-bottom: 10px; /* 타이틀과 링크 간격 */
+    margin-top: 5px;
+    text-align: center; /* 중앙 정렬 */
+  }
+
+  .header-links {
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 링크들을 수평 중앙 정렬 */
+    gap: 3px; /* 링크 간 간격 */
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    flex-wrap: nowrap; /* 링크들이 한 줄에 유지되도록 */
+  }
+
+  .header-link {
+    font-size: 0.8rem; /* 링크 크기 감소 */
+    text-align: center; /* 중앙 정렬 */
+    padding: 5px; /* 링크 주변 패딩 */
+    transition: color 0.3s; /* 색상 전환 효과 */
+    white-space: nowrap; /* 줄바꿈 방지 */
+  }
+
+  //readme
+  .Readme-demo-link {
+    font-size: 13px;
+  }
+}
