@@ -9,6 +9,8 @@ import iconREACT from "../../assets/img/iconREACT.png";
 import iconGIT from "../../assets/img/iconGIT.png";
 import iconJava from "../../assets/img/iconJava.png";
 import iconSpringBoot from "../../assets/img/iconSpringBoot.png";
+import iconEmotion from "../../assets/img/iconEmotion.png";
+import iconBootStrap from "../../assets/img/iconBootStrap.png";
 
 function HOME_SKILLS() {
   return (
@@ -58,6 +60,14 @@ function HOME_SKILLS() {
             <li>
               <img src={iconSASS} alt="SASS" />
               <span>SASS</span>
+            </li>
+            <li>
+              <img src={iconEmotion} alt="Emotion" />
+              <span>Emotion</span>
+            </li>
+            <li>
+              <img src={iconBootStrap} alt="BootStrap" />
+              <span>BootStrap</span>
             </li>
           </ul>
         </div>

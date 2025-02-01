@@ -12,7 +12,7 @@ function HOME_CAREER() {
           <div className="career-header">
             <img className="career-logo" src={CAREER_LOGO}></img>
             <div className="career-name">(주)모빌씨앤씨</div>
-            <span className="career-date">2022.08 ~ 2024.12</span>
+            <span className="career-date">2022.08 ~ 2025.01</span>
           </div>
 
           <div className="career-content">
