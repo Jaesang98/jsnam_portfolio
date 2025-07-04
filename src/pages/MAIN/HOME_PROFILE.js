@@ -1,4 +1,4 @@
-import profileImg from "../../assets/img/profileImg1.jpg";
+import profileImg from "../../assets/img/profileImg3.jpg";
 import Header from "../component/Header";
 
 function HOME_PROFILE({ scrollToElement }) {
