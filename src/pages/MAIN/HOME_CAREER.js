@@ -12,7 +12,7 @@ function HOME_CAREER() {
           <div className="career-header">
             <img className="career-logo" src={CAREER_LOGO}></img>
             <div className="career-name">(주)모빌씨앤씨</div>
-            <span className="career-date">2022.08 ~ 2025.01</span>
+            <span className="career-date">2022.08 ~ 2025.02</span>
           </div>
 
           <div className="career-content">
@@ -24,20 +24,16 @@ function HOME_CAREER() {
               주로 장기간 외근을 나가 SI 프로젝트를 진행하였습니다.
             </p>
             <p className="mt15">
-              초기에는 JavaScript와 jQuery를 사용했으나, 2024년부터는 Vue.js와
-              TypeScript를 도입하여 프로젝트를 개발하고 있습니다.
+              JavaScript와 TypeScript를 기반으로 개발하며, 프로젝트에 따라
+              jQuery와 Vue.js를 적절히 활용해 왔습니다.
             </p>
             <p className="mt15">
-              자사 및 외부 고객의 2개 프로젝트를 유지보수하고, 5개의 신규
-              프로젝트를 성공적으로 개발했습니다.
+              자사 및 외부 고객의 프로젝트 2건을 유지보수하고, 신규 프로젝트
+              5건을 성공적으로 개발했습니다.
             </p>
             <p className="mt15">
-              고객과의 직접적인 소통을 통해 요구사항을 명확히 하고, 프로젝트를
-              구체화하여 최적의 솔루션을 제공했습니다.
-            </p>
-            <p className="mt15">
-              다양한 기술 스택을 적용하며 성능 최적화 및 사용자 경험 향상에
-              기여했습니다.
+              고객과의 직접 소통을 통해 요구사항을 명확히 파악하고, 이를
+              바탕으로 최적의 솔루션을 구현했습니다.
             </p>
           </div>
         </div>
