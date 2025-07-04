@@ -80,7 +80,7 @@ function HOME_ABOUTME() {
           </div>
         </div> */}
 
-        <div className="about-interview-item">
+        {/* <div className="about-interview-item">
           <div className="about-interview-question mb15">
             Q. 프로젝트를 진행하면서 가장 힘들었던건 무엇인가요?
           </div>
@@ -101,7 +101,7 @@ function HOME_ABOUTME() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="about-interview-item">
           <div className="about-interview-question mb15">
