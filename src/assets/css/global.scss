@@ -1156,6 +1156,28 @@ iframe {
   color: #bbb; /* 어두운 글씨색 */
 }
 
+.project-language {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+
+  img {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    border-radius: 8px;
+    background-color: rgb(131, 131, 131);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
 .project-readme,
 .project-site {
   margin-top: 10px;

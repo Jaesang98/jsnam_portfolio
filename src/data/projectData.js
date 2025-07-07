@@ -12,7 +12,7 @@ const projectData = [
     pr_detail: "웹소설 주인공이나 연예인과 AI 채팅이 가능한 플랫폼입니다.",
     pr_sitelink: "https://jsnam-portfolio.vercel.app/",
     pr_date: "2025.06 ~ 2025.07",
-    pr_language: ["typescript", "nextjs", "tailwind"],
+    pr_language: ["iconTS", "iconNext", "iconTailwind"],
   },
   {
     pr_id: "2",
@@ -23,7 +23,7 @@ const projectData = [
       "개발 중 자주 마주치는 이슈나 반복되는 작업들을 정리한 개인 개발 위키입니다",
     pr_sitelink: "https://jsnam-portfolio.vercel.app/",
     pr_date: "2025.04 ~ 2025.06",
-    pr_language: ["typescript", "react", "sass"],
+    pr_language: ["iconTS", "iconREACT", "iconSASS"],
   },
   {
     pr_id: "3",
@@ -34,7 +34,7 @@ const projectData = [
       "서로 좋아하는 음악을 공유하고 다양한 음악 정보를 공유하는 사이트 입니다.",
     pr_sitelink: "https://jsnam-portfolio.vercel.app/",
     pr_date: "2024.12 ~ 2025.04",
-    pr_language: ["typescript", "react", "emotion"],
+    pr_language: ["iconTS", "iconREACT", "iconEmotion"],
   },
   {
     pr_id: "4",
@@ -44,6 +44,7 @@ const projectData = [
     pr_detail: "소개를 위한 포트폴리오 사이트 입니다.",
     pr_sitelink: "https://jsnam-portfolio.vercel.app/",
     pr_date: "2024.10 ~ 2024.11",
+    pr_language: ["iconJS", "iconREACT", "iconSASS"],
   },
   // {
   //   pr_id: "1",
