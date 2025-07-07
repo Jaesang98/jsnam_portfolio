@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# 💻 남재상 포트폴리오
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+프론트엔드 개발자 남재상의 포트폴리오입니다.  
+Next, React, Vue TypeScript 등 다양한 기술을 기반으로 사용자 경험을 개선하고,  
+실제 서비스에 기여한 프로젝트들을 담았습니다.
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+## 🔗 배포 주소
 
-### `npm start`
+👉 [포트폴리오 바로가기](https://jsnam-portfolio.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ 기술 스택
 
-### `npm test`
+- **Frontend**: Nextjs, React, Vue3, TypeScript, Tailwind, Emotion, Sass
+- **Backend**: Spring Boot, MyBatis, JPA, MariaDB
+- **ETC**: Swagger, JWT, Git, Figma, Postman, Vercel
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
 
-### `npm run build`
+## 📁 프로젝트 요약
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🍔 버거킹 웹/앱 (2025.05 ~ 2025.10)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Vue + TypeScript 기반 반응형 웹 및 하이브리드 앱 구현
+- 네이버 맵, Kakao 인증, NICE 인증 등 외부 API 연동
+- 상태 관리를 위한 Pinia 구조 설계 및 유지보수성 향상
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📦 롯데 B2B / SM 프로젝트
 
-### `npm run eject`
+- 수입 제품 카탈로그, 커뮤니티, 장비관리 기능 개발
+- jQuery 기반 시스템을 Vue로 점진적 전환하며 성능 및 UI 개선
+- Tableau 및 GPS 위치 기반 데이터 연동 구현
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🛠️ MVP 공통 프로젝트
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 프론트엔드 구조 설계 및 공통 컴포넌트 구성
+- JWT 인증 처리, 페이지 권한 분기 및 역할별 라우팅
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<br>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📌 주요 특징
 
-## Learn More
+- 실서비스 운영 환경의 구조와 코드 품질 개선 경험
+- 다양한 도메인의 요구사항 분석 및 커뮤니케이션 경험
+- 지속적인 리팩토링과 문서화를 통한 유지보수 용이성 확보
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📞 연락처
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Email**: skawotkd12@naver.com  
+- **GitHub**: [Github](https://github.com/Jaesang98)
+- **Blog**: [velog](https://velog.io/@jaesang98/posts)
