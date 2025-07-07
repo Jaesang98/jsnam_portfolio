@@ -11,10 +11,10 @@ import dev_code from "../assets/img/dev_code.png";
 import dev_main from "../assets/img/dev_main.png";
 
 //portfolio
-import port_profile from "../assets/img/port_profile.png";
-import port_aboutme from "../assets/img/port_aboutme.png";
-import port_career from "../assets/img/port_career.png";
-import port_project from "../assets/img/port_project.png";
+import port_profile from "../assets/img/port_profile2.png";
+import port_skills from "../assets/img/port_skills.png";
+import port_career from "../assets/img/port_career2.png";
+import port_modal from "../assets/img/port_modal.png";
 
 //hjChatBot
 import chat_main from "../assets/img/chat_main.png";
@@ -41,7 +41,7 @@ const projectDetails = [
       "기획 및 디자인, 화면 퍼블리싱, 프론트엔드 전 페이지 및 공통 기능 개발",
     prDetail_reflections:
       "이전 프로젝트와 달리 디자인에 더욱 신경을 썼으며, React의 컴포넌트 구조를 최대한 활용하는 데 집중했습니다. 이를 통해 디자인 감각과 React 실력이 크게 향상되었습니다.",
-    prDetail_images: [port_profile, port_aboutme, port_career, port_project],
+    prDetail_images: [port_profile, port_skills, port_career, port_modal],
     prDetail_challenges: {
       problem:
         "디자인에 큰 어려움을 겪었고 퍼블리싱의 구조를 잡는데 시간이 오래걸렸습니다.",
@@ -72,7 +72,7 @@ const projectDetails = [
       "기획 및 디자인, 화면 퍼블리싱, 프론트엔드 전 페이지 및 공통 기능 개발",
     prDetail_reflections:
       "이전 프로젝트와 달리 디자인에 더욱 신경을 썼으며, React의 컴포넌트 구조를 최대한 활용하는 데 집중했습니다. 이를 통해 디자인 감각과 React 실력이 크게 향상되었습니다.",
-    prDetail_images: [port_profile, port_aboutme, port_career, port_project],
+    prDetail_images: [port_profile, port_skills, port_career, port_modal],
     prDetail_challenges: {
       problem:
         "디자인에 큰 어려움을 겪었고 퍼블리싱의 구조를 잡는데 시간이 오래걸렸습니다.",
@@ -103,7 +103,7 @@ const projectDetails = [
       "기획 및 디자인, 화면 퍼블리싱, 프론트엔드 전 페이지 및 공통 기능 개발",
     prDetail_reflections:
       "이전 프로젝트와 달리 디자인에 더욱 신경을 썼으며, React의 컴포넌트 구조를 최대한 활용하는 데 집중했습니다. 이를 통해 디자인 감각과 React 실력이 크게 향상되었습니다.",
-    prDetail_images: [port_profile, port_aboutme, port_career, port_project],
+    prDetail_images: [port_profile, port_skills, port_career, port_modal],
     prDetail_challenges: {
       problem:
         "디자인에 큰 어려움을 겪었고 퍼블리싱의 구조를 잡는데 시간이 오래걸렸습니다.",
@@ -134,7 +134,7 @@ const projectDetails = [
       "기획 및 디자인, 화면 퍼블리싱, 프론트엔드 전 페이지 및 공통 기능 개발",
     prDetail_reflections:
       "이전 프로젝트와 달리 디자인에 더욱 신경을 썼으며, React의 컴포넌트 구조를 최대한 활용하는 데 집중했습니다. 이를 통해 디자인 감각과 React 실력이 크게 향상되었습니다.",
-    prDetail_images: [port_profile, port_aboutme, port_career, port_project],
+    prDetail_images: [port_profile, port_skills, port_career, port_modal],
     prDetail_challenges: {
       problem:
         "디자인에 큰 어려움을 겪었고 퍼블리싱의 구조를 잡는데 시간이 오래걸렸습니다.",

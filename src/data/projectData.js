@@ -1,7 +1,7 @@
 import clim_main from "../assets/img/clim_main.png";
 import dev_code from "../assets/img/dev_code.png";
 import chat from "../assets/img/chat_main.png";
-import port_profile from "../assets/img/port_profile.png";
+import port_profile from "../assets/img/port_profile2.png";
 
 const projectData = [
   {
