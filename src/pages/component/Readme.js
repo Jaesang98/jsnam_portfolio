@@ -56,7 +56,11 @@ function Readme({ projectId, closeReadme }) {
                 />
                 프로젝트 설명
               </h3>
-              <p>{projectDetail.prDetail_description}</p>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: projectDetail.prDetail_description,
+                }}
+              />
             </div>
 
             <div className="Readme-tech-stack">
@@ -68,7 +72,11 @@ function Readme({ projectId, closeReadme }) {
                 />
                 사용한 언어/프레임워크
               </h3>
-              <p>{projectDetail.prDetail_techStack}</p>
+              <div className="Readme-language-content">
+                {projectDetail.prDetail_techStack.map((item, idx) => (
+                  <p className="Readme-language">{item}</p>
+                ))}
+              </div>
             </div>
 
             <div className="Readme-features">

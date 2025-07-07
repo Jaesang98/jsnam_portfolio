@@ -1,6 +1,7 @@
 import clim_main from "../assets/img/clim_main.png";
 import dev_code from "../assets/img/dev_code.png";
 import chat from "../assets/img/chat_main.png";
+import musing_main1 from "../assets/img/musing/musing_main1.png";
 import port_profile from "../assets/img/port_profile2.png";
 
 const projectData = [
@@ -28,7 +29,7 @@ const projectData = [
   {
     pr_id: "3",
     pr_team: "T",
-    pr_image: port_profile,
+    pr_image: musing_main1,
     pr_title: "Musing",
     pr_detail:
       "서로 좋아하는 음악을 공유하고 다양한 음악 정보를 공유하는 사이트 입니다.",
