@@ -1452,8 +1452,8 @@ iframe {
 
 /* Readme modal box */
 .Readme-container {
-  width: 700px;
-  padding: 35px;
+  width: 1700px;
+  padding: 35px 200px 35px 200px;
   /* 패딩 증가 */
   background-color: #ffffff;
   border-radius: 15px;
@@ -1464,6 +1464,8 @@ iframe {
   position: relative;
   overflow-y: auto;
   max-height: 90vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Close button */
@@ -1601,6 +1603,7 @@ iframe {
 .Readme-outcomes p {
   line-height: 1.6; /* 줄 높이 증가 */
   color: #666; /* 설명은 연한 색으로 변경 */
+  margin-top: 10px;
 }
 
 /* Project demo link */
@@ -1712,6 +1715,11 @@ iframe {
 
   .header-link {
     font-size: 1.3rem; /* 링크 크기 감소 */
+  }
+
+  // 모달창
+  .Readme-container {
+    padding: 20px;
   }
 }
 
