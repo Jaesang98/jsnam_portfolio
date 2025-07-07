@@ -120,7 +120,13 @@ function HOME_PROJECT() {
 
       <div className="project-list">
         {filteredProjects.map((item, idx) => (
-          <div className="project-contents" key={idx}>
+          <div
+            className="project-contents"
+            key={idx}
+            onClick={() => {
+              openReadme(item.pr_id);
+            }}
+          >
             <div className="project-contents-taglist">
               {item.pr_team === "T" ? (
                 <div className="project-tag">Team</div>

@@ -116,8 +116,8 @@ const projectDetails = [
     prDetail_outcomes:
       "포트폴리오 사이트를 통해 디자인과 개발 역량을 한층 더 발전시킬 수 있었습니다. React의 컴포넌트 구조와 퍼블리싱에 대한 이해가 깊어졌으며, 사용자 경험을 고려한 UI/UX 개선에도 성과를 보였습니다. 이 프로젝트를 통해 프론트엔드 기술의 전반적인 실력을 크게 향상시킬 수 있었습니다.",
     prDetail_links: {
-      projectLink: "https://jsnam-portfolio.vercel.app/",
-      githubLink: "https://github.com/Jaesang98/jsnam_portfolio",
+      projectLink: "https://digging-musing.site/",
+      githubLink: "https://github.com/JTH-00/ReadMe_Preset",
     },
   },
   {
