@@ -8,6 +8,14 @@ import delulu_home from "../assets/img/delulu/delulu_home.png";
 import delulu_profile from "../assets/img/delulu/delulu_profile.png";
 import delulu_yg from "../assets/img/delulu/delulu_yg.png";
 
+//JS-Developer
+import jsdev_main from "../assets/img/jsdev/jsdev_main.png";
+import jsdev_dict from "../assets/img/jsdev/jsdev_dict.png";
+import jsdev_dictList from "../assets/img/jsdev/jsdev_dictList.png";
+import jsdev_edit from "../assets/img/jsdev/jsdev_edit.png";
+import jsdev_guide from "../assets/img/jsdev/jsdev_guide.png";
+import jsdev_login from "../assets/img/jsdev/jsdev_login.png";
+
 // musing
 import musing_main1 from "../assets/img/musing/musing_main1.png";
 import musing_main2 from "../assets/img/musing/musing_main2.png";
@@ -83,38 +91,41 @@ const projectDetails = [
     prDetail_id: "2",
     prDetail_team: "S",
     prDetail_title: "JS-Developer",
-    prDetail_date: "2025.03 ~ 2025.06",
+    prDetail_date: "2025.04 ~ 2025.06",
     prDetail_description:
       "개발 중 자주 마주치는 이슈나 반복되는 작업들을 정리한 개인 개발 위키입니다.",
     prDetail_techStack: [
       "React",
       "TypeScript",
-      "Emotion",
+      "SASS",
       "Zustand",
       "React Query",
+      "Java",
+      "SpringBoot",
+      "JPA",
     ],
     prDetail_features: [
       "<strong>React, TypeScript</strong> 기반의 웹 애플리케이션 개발 및 UI 구성",
-      "<strong>FSD(Folder Structure Driven)</strong> 방식의 디렉토리 구조 설계",
+      "<strong>Spring Boot</strong> 기반의 서버 개발 및 <strong>JPA</strong>를 활용한 데이터 처리",
+      "<strong>JWT</strong>를 이용한 로그인 및 인증 토큰 시스템 구현",
       "<strong>React Query</strong>를 활용한 서버 상태 관리 및 API 통신 최적화",
       "<strong>Zustand</strong>로 전역 상태를 간결하고 효율적으로 관리",
-      "<strong>Emotion</strong>을 사용하여 컴포넌트 단위 스타일링",
-      "<strong>GitHub Actions</strong> 기반의 CI 구성 및 Vercel 연동을 통한 자동 배포 환경(CI/CD) 구축",
-      "<strong>Docker</strong> 컨테이너 기반의 백엔드 API와 통신하며 개발 환경 구성",
+      "<strong>SASS</strong>를 사용하여 스타일을 <strong>Module</strong> 단위로 관리",
+      "Prettier와 ESLint를 사용하여 코드 스타일 자동화 및 일관성 유지",
     ],
-    prDetail_role:
-      "UI구성 및 프론트엔드개발 <br> <strong>공통 컴포넌트</strong> 개발 <br> 기여도: 25%",
+    prDetail_role: "UI구성 및 프론트엔드 백엔드개발",
     prDetail_reflections: [
       "<strong>홈 화면</strong>, <strong>플레이리스트</strong>, <strong>게시글</strong> 등 주요 화면 UI를 직접 개발했습니다.",
       "<strong>Button</strong>, <strong>Modal</strong>, <strong>Pagination</strong>, <strong>Tag</strong> 등 다양한 공통 컴포넌트를 직접 설계하고 구현했습니다.",
       "<strong>Google Login</strong> 연동 후, <strong>Access Token</strong>, <strong>Refresh Token</strong>, <strong>Token Reissue</strong> 기능을 <strong>Axios Interceptor</strong>를 통해 처리했습니다.",
     ],
     prDetail_images: [
-      musing_main1,
-      musing_main2,
-      musing_playlist,
-      musing_post,
-      musing_service,
+      jsdev_main,
+      jsdev_login,
+      jsdev_guide,
+      jsdev_dictList,
+      jsdev_dict,
+      jsdev_edit,
     ],
     prDetail_challenges: {
       problem: [
