@@ -3,6 +3,8 @@ import iconVue from "../../assets/img/iconVUE.png";
 import iconJQUERY from "../../assets/img/iconJQUERY.png";
 import iconJS from "../../assets/img/iconJS.png";
 import iconTS from "../../assets/img/iconTS.png";
+import iconJava from "../../assets/img/iconJava.png";
+import iconSpringBoot from "../../assets/img/iconSpringBoot.png";
 
 function HOME_CAREER() {
   const techIcons = [
@@ -10,6 +12,8 @@ function HOME_CAREER() {
     { src: iconTS, alt: "TypeScript" },
     { src: iconVue, alt: "Vue" },
     { src: iconJQUERY, alt: "jQuery" },
+    { src: iconJava, alt: "Java" },
+    { src: iconSpringBoot, alt: "SpringBoot" },
   ];
 
   return (
