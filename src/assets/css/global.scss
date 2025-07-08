@@ -1609,8 +1609,9 @@ iframe {
 }
 
 .Readme-project-image {
-  width: 50%; /* 슬라이드 내의 이미지가 전체 너비를 차지 */
-  height: auto; /* 높이는 자동 조정 */
+  // width: 100%;
+  // min-height: 700px; /* 슬라이드 내의 이미지가 전체 너비를 차지 */
+  max-height: 700px; /* 높이는 자동 조정 */
   object-fit: cover; /* 비율 유지 및 잘라내기 */
   border-radius: 10px; /* 이미지 모서리 둥글게 */
   margin: auto; /* 가운데 정렬 */

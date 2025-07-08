@@ -3,12 +3,13 @@ import dev_code from "../assets/img/dev_code.png";
 import chat from "../assets/img/chat_main.png";
 import musing_main1 from "../assets/img/musing/musing_main1.png";
 import port_profile from "../assets/img/port_profile2.png";
+import delulu_poster from "../assets/img/delulu/delulu_poster.png";
 
 const projectData = [
   {
     pr_id: "1",
     pr_team: "T",
-    pr_image: port_profile,
+    pr_image: delulu_poster,
     pr_title: "Delulu",
     pr_detail: "웹소설 주인공이나 연예인과 AI 채팅이 가능한 플랫폼입니다.",
     pr_sitelink: "https://jsnam-portfolio.vercel.app/",

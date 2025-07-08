@@ -1,3 +1,13 @@
+// Delulu
+import delulu_poster from "../assets/img/delulu/delulu_poster.png";
+import delulu_ai from "../assets/img/delulu/delulu_ai.png";
+import delulu_bot from "../assets/img/delulu/delulu_bot.png";
+import delulu_chat from "../assets/img/delulu/delulu_chat.png";
+import delulu_chatList from "../assets/img/delulu/delulu_chatList.png";
+import delulu_home from "../assets/img/delulu/delulu_home.png";
+import delulu_profile from "../assets/img/delulu/delulu_profile.png";
+import delulu_yg from "../assets/img/delulu/delulu_yg.png";
+
 // musing
 import musing_main1 from "../assets/img/musing/musing_main1.png";
 import musing_main2 from "../assets/img/musing/musing_main2.png";
@@ -45,11 +55,13 @@ const projectDetails = [
       "<strong>Google Login</strong> 연동 후, <strong>Access Token</strong>, <strong>Refresh Token</strong>, <strong>Token Reissue</strong> 기능을 <strong>Axios Interceptor</strong>를 통해 처리했습니다.",
     ],
     prDetail_images: [
-      musing_main1,
-      musing_main2,
-      musing_playlist,
-      musing_post,
-      musing_service,
+      delulu_poster,
+      delulu_home,
+      delulu_chatList,
+      delulu_chat,
+      delulu_ai,
+      delulu_profile,
+      delulu_yg,
     ],
     prDetail_challenges: {
       problem: [

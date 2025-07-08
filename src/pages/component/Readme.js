@@ -131,7 +131,7 @@ function Readme({ projectId, closeReadme }) {
                       <img
                         src={image}
                         alt={`Project Image ${index + 1}`}
-                        // className="Readme-project-image"
+                        className="Readme-project-image"
                         // onClick={() => ImageFull(image)}
                       />
                     </SwiperSlide>
