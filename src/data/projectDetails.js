@@ -115,9 +115,10 @@ const projectDetails = [
     ],
     prDetail_role: "UI구성 및 프론트엔드 백엔드개발",
     prDetail_reflections: [
-      "<strong>홈 화면</strong>, <strong>플레이리스트</strong>, <strong>게시글</strong> 등 주요 화면 UI를 직접 개발했습니다.",
-      "<strong>Button</strong>, <strong>Modal</strong>, <strong>Pagination</strong>, <strong>Tag</strong> 등 다양한 공통 컴포넌트를 직접 설계하고 구현했습니다.",
-      "<strong>Google Login</strong> 연동 후, <strong>Access Token</strong>, <strong>Refresh Token</strong>, <strong>Token Reissue</strong> 기능을 <strong>Axios Interceptor</strong>를 통해 처리했습니다.",
+      "<strong>JWT</strong> 인증 구조를 설계하고 AccessToken, RefreshToken 및 재발급 시스템 구현",
+      "403 오류 발생 시 <strong>자동 로그아웃</strong> 로직 구성 (로컬 스토리지 기반 토큰 관리)",
+      "하나의 테이블로 <strong>대-중-소 메뉴</strong> 구조를 설계하고, 이를 트리 형태로 렌더링",
+      "<strong>Markdown</strong> 라이브러리를 적용하여 위키 문서 스타일 구현",
     ],
     prDetail_images: [
       jsdev_main,
@@ -129,20 +130,22 @@ const projectDetails = [
     ],
     prDetail_challenges: {
       problem: [
-        "초기에는 <strong>FSD(Folder Structure Driven)</strong> 구조가 다소 복잡하게 느껴졌습니다.",
-        "보통은 <strong>규모가 큰 프로젝트에서 사용하는 방식</strong>이라, 상대적으로 작은 규모의 프로젝트에 적용하니 오히려 <strong>구조가 과하게</strong> 느껴졌습니다.",
+        "디자이너와 협의 부족으로 다크모드가 라이트모드와 대칭되지 않아, 각 셀렉터별로 다크모드 대응 필요",
+        "ERD 설계 후 구조적 오류로 인해 반복적인 수정 발생",
+        "AccessToken 처리 시 <strong>MemberDetails 커스터마이징</strong>이 적용이 되었으나, <strong>RefreshToken</strong>에서는 사용자 정보 커스터마이징이 되지 않았음",
       ],
       solution: [
-        "하지만 프로젝트를 진행하면서 점차 <strong>FSD 구조에 익숙</strong>해졌고, 디렉토리 간 <strong>역할을 명확히 나누는 데</strong>에 큰 도움이 되었습니다.",
-        "현재는 <strong>유지보수성과 확장성</strong> 측면에서 FSD 구조의 장점을 체감하고 있습니다.",
+        "<strong>SCSS mixins</strong>과 <strong>functions</strong>을 활용해 다크모드 구현 최소화",
+        "백엔드 개발자 피드백을 받아 메뉴 통합 및 정합성 개선",
+        "<strong>Filter</strong>에서 RefreshToken 수신 시 <strong>MemberRepository</strong>를 통해 사용자 정보 커스터마이징",
       ],
     },
     prDetail_outcomes:
-      "FSD 구조 적용을 통해 디렉토리 체계를 정리하고, 공통 컴포넌트 도입으로 코드 재사용성과 유지보수성을 크게 향상시켰습니다.",
+      "<strong>프론트와 백엔드 전반</strong>을 직접 구현하며 인증/인가 구조 설계, UI 구성, 데이터 구조 등 다양한 실무 흐름을 경험할 수 있었고, 마크다운 기반의 개발 문서 체계를 직접 설계하여 위키 중심의 개발 문화를 적용했습니다.",
 
     prDetail_links: {
-      projectLink: "https://digging-musing.site/",
-      githubLink: "https://github.com/JTH-00/ReadMe_Preset",
+      // projectLink: "https://digging-musing.site/",
+      githubLink: "https://github.com/Jaesang98/JS-Developer",
     },
   },
 
