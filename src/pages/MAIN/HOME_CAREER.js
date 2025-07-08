@@ -1,6 +1,17 @@
 import CAREER_LOGO from "../../assets/img/CAREER_LOGO.gif";
+import iconVue from "../../assets/img/iconVUE.png";
+import iconJQUERY from "../../assets/img/iconJQUERY.png";
+import iconJS from "../../assets/img/iconJS.png";
+import iconTS from "../../assets/img/iconTS.png";
 
 function HOME_CAREER() {
+  const techIcons = [
+    { src: iconJS, alt: "JavaScript" },
+    { src: iconTS, alt: "TypeScript" },
+    { src: iconVue, alt: "Vue" },
+    { src: iconJQUERY, alt: "jQuery" },
+  ];
+
   return (
     <div className="career-container">
       <div className="career-title">
@@ -35,6 +46,17 @@ function HOME_CAREER() {
               고객과의 직접 소통을 통해 요구사항을 명확히 파악하고, 이를
               바탕으로 최적의 솔루션을 구현했습니다.
             </p>
+            <div className="project-language">
+              {techIcons.map((icon, index) => (
+                <img
+                  key={index}
+                  src={icon.src}
+                  alt={icon.alt}
+                  title={icon.alt}
+                  className="career" // 여기 붙이기
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

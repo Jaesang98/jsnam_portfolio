@@ -79,6 +79,18 @@ function Readme({ projectId, closeReadme }) {
               </div>
             </div>
 
+            <div className="Readme-role">
+              <h3>
+                <img src={Role} alt="Role Icon" className="Readme-icon" />
+                역할 및 기여도
+              </h3>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: projectDetail.prDetail_role,
+                }}
+              ></p>
+            </div>
+
             <div className="Readme-features">
               <h3>
                 <img
@@ -86,33 +98,13 @@ function Readme({ projectId, closeReadme }) {
                   alt="Features Icon"
                   className="Readme-icon"
                 />
-                주요 기능
+                기술 구현
               </h3>
               <ul>
                 {projectDetail.prDetail_features.map((item, idx) => (
-                  <li key={idx}>{item}</li>
+                  <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
                 ))}
               </ul>
-            </div>
-
-            <div className="Readme-role">
-              <h3>
-                <img src={Role} alt="Role Icon" className="Readme-icon" />
-                역할 및 기여도
-              </h3>
-              <p>{projectDetail.prDetail_role}</p>
-            </div>
-
-            <div className="Readme-reflections">
-              <h3>
-                <img
-                  src={Feel}
-                  alt="Reflections Icon"
-                  className="Readme-icon"
-                />
-                느낀 점
-              </h3>
-              <p>{projectDetail.prDetail_reflections}</p>
             </div>
 
             <div className="Readme-image">
@@ -148,7 +140,24 @@ function Readme({ projectId, closeReadme }) {
               )}
             </div>
 
-            <div className="Readme-challenges">
+            <div className="Readme-features">
+              <h3>
+                <img
+                  src={Feel}
+                  alt="Reflections Icon"
+                  className="Readme-icon"
+                />
+                주요 기능
+              </h3>
+              <ul>
+                {projectDetail.prDetail_reflections.map((item, idx) => (
+                  <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
+                ))}
+              </ul>
+              {/* <p>{projectDetail.prDetail_reflections}</p> */}
+            </div>
+
+            <div className="Readme-features">
               <h3>
                 <img
                   src={Solution}
@@ -157,14 +166,28 @@ function Readme({ projectId, closeReadme }) {
                 />
                 문제점과 해결 방안
               </h3>
-              <p>
+              <br></br>
+              <ul>
+                <strong>문제점:</strong>
+                {projectDetail.prDetail_challenges.problem.map((item, idx) => (
+                  <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
+                ))}
+              </ul>
+              <br></br>
+              <ul>
+                <strong>해결 방안:</strong>
+                {projectDetail.prDetail_challenges.solution.map((item, idx) => (
+                  <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
+                ))}
+              </ul>
+              {/* <p>
                 <strong>문제점:</strong>{" "}
                 {projectDetail.prDetail_challenges.problem}
                 <br />
                 <br />
                 <strong>해결 방안:</strong>{" "}
                 {projectDetail.prDetail_challenges.solution}
-              </p>
+              </p> */}
             </div>
 
             <div className="Readme-outcomes">
