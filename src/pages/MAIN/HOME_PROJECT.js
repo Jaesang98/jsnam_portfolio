@@ -145,7 +145,8 @@ function HOME_PROJECT() {
 
               <button
                 className="project-readme"
-                onClick={() => {
+                onClick={(e) => {
+                  e.stopPropagation();
                   openReadme(item.pr_id);
                 }}
               >
@@ -154,7 +155,8 @@ function HOME_PROJECT() {
               {item.pr_sitelink ? (
                 <button
                   className="project-site"
-                  onClick={() => {
+                  onClick={(e) => {
+                    e.stopPropagation(); // 이걸 추가해야 함!
                     openSite(item.pr_sitelink);
                   }}
                 >

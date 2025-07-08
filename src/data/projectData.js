@@ -11,8 +11,9 @@ const projectData = [
     pr_team: "T",
     pr_image: delulu_poster,
     pr_title: "Delulu",
-    pr_detail: "웹소설 주인공이나 연예인과 AI 채팅이 가능한 플랫폼입니다.",
-    pr_sitelink: "https://jsnam-portfolio.vercel.app/",
+    pr_detail:
+      "웹소설의 주인공, 실제 연예인과 AI를 통해 대화할 수 있는 체험형 채팅 플랫폼입니다.",
+    pr_sitelink: "https://delulu.ohrora.org/en/",
     pr_date: "2025.06 ~ 2025.07",
     pr_language: ["iconTS", "iconNext", "iconTailwind"],
   },

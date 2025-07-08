@@ -195,7 +195,11 @@ function Readme({ projectId, closeReadme }) {
                 <img src={End} alt="Outcomes Icon" className="Readme-icon" />
                 결과 및 성과
               </h3>
-              <p>{projectDetail.prDetail_outcomes}</p>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: projectDetail.prDetail_outcomes,
+                }}
+              ></p>
             </div>
 
             <div className="Readme-link">
