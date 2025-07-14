@@ -1507,7 +1507,7 @@ iframe {
   position: sticky; /* 스크롤 시에도 위치 유지 */
   top: 0; /* 상단에 고정 */
   background-color: transparent; /* 배경색 투명하게 설정 */
-  z-index: 1; /* 모달 내용 위에 표시 */
+  z-index: 999; /* 모달 내용 위에 표시 */
   margin-top: -20px;
 }
 
@@ -1737,6 +1737,10 @@ iframe {
   .project-category {
     display: flex;
     justify-content: center;
+  }
+
+  .project-list {
+    width: 100%;
   }
 
   .project-contents {
