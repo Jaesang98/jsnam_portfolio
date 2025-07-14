@@ -33,8 +33,8 @@ function Readme({ projectId, closeReadme }) {
   }
 
   return (
-    <div className="Readme-overlay">
-      <div className="Readme-container">
+    <div className="Readme-overlay" onClick={closeReadme}>
+      <div className="Readme-container" onClick={(e) => e.stopPropagation()}>
         {!imgShow ? (
           <>
             <div className="Readme-head">
